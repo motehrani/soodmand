@@ -1,0 +1,18 @@
+@import 'components';
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  background-color: rgb(23, 22, 22);
+}
+
+*:not(.material-icons) {
+  font-family: 'Vazirmatn FD', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
