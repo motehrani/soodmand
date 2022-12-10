@@ -1,0 +1,47 @@
+.the-news {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.latest-news {
+  display: flex;
+  max-width: 1366px;
+  justify-content: center;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    direction: rtl;
+
+    h2 {
+      color: white;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    span {
+      color: white;
+    }
+
+    >.detail-news {
+      display: flex;
+
+
+    }
+
+    .news-picture {
+      width: 450px;
+      height: 450px;
+      background-image: url("../../../../public/img/news.jpg");
+      background-repeat: no-repeat;
+      background-size: 450px 450px;
+
+      button {
+        margin: 15px;
+        margin-left: 0;
+      }
+    }
+  }
+}

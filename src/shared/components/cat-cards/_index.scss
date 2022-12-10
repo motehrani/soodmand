@@ -1,0 +1,31 @@
+.cat-cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  >div {
+    display: flex;
+    max-width: 1366px;
+    gap: 0px 30px;
+  }
+}
+
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  max-width: 1366px;
+  border: 1px solid white;
+
+
+  h2,
+  span {
+    color: rgb(221, 221, 221);
+  }
+}
+
+.existence {
+  display: flex;
+  flex-direction: row;
+  background: blue;
+}

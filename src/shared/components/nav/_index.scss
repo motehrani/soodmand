@@ -1,10 +1,10 @@
 .nav-bar {
-  background: rgb(41, 41, 41);
+  background: rgb(17, 21, 13);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #161412;
+  border-bottom: 1px solid #000000;
 
   >div {
     padding: 20px 10px;
@@ -78,14 +78,12 @@
               color: #dddddd;
 
               &:hover {
-                background: #252525;
+                background: #25201b;
               }
             }
           }
         }
       }
     }
-
-    >.logo {}
   }
 }

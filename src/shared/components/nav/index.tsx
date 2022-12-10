@@ -24,7 +24,7 @@ export const Nav = () => {
             <QuickAccess
               title="فرصت محدود"
               description="پیشنهاد شگفت انگیز"
-              image="/svg/discount2.svg"
+              image="/svg/discount.svg"
             />
 
             <ul className="catagories">

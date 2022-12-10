@@ -1,0 +1,43 @@
+footer {
+  background: rgb(0, 0, 0);
+  border-top: 1px solid rgb(100, 67, 41);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+
+  >div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    direction: rtl;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  li,
+  span {
+    color: white;
+    direction: rtl;
+  }
+
+  li {
+    margin: 10px 40px 10px 0px;
+  }
+
+  h6,
+  h5,
+  h4,
+  h3,
+  span {
+    margin: 0;
+  }
+
+}
