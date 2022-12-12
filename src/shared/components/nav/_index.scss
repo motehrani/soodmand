@@ -7,7 +7,7 @@
   border-bottom: 1px solid #000000;
 
   >div {
-    padding: 20px 10px;
+    padding: 5px 10px;
     display: flex;
     width: 100%;
     max-width: 1366px;
@@ -15,6 +15,8 @@
     align-items: center;
 
     >.icon {
+      display: flex;
+
       >img {
         padding-left: 7px;
       }
@@ -38,20 +40,14 @@
             display: flex;
             flex-direction: column;
 
-            >h5,
-            >h6 {
+            >h2 {
               margin: 0;
               text-align: right;
               color: #a3a3a3;
+              font-size: 10px;
             }
 
-            >h6 {
-              font-size: 12px;
-              margin-bottom: 6px;
-            }
-
-            >h5 {
-              font-size: 14px;
+            .description {
               color: #FFD100;
             }
           }
@@ -76,6 +72,7 @@
               text-decoration: none;
               border-radius: 6px;
               color: #dddddd;
+              font-size: 12px;
 
               &:hover {
                 background: #25201b;
@@ -84,6 +81,10 @@
           }
         }
       }
+    }
+
+    #logo {
+      display: flex;
     }
   }
 }

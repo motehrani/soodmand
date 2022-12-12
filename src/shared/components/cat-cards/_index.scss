@@ -15,17 +15,27 @@
   flex-direction: column;
   direction: rtl;
   max-width: 1366px;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 218, 71);
 
+  .title {
+    font-size: 14px;
+    color: rgb(222, 222, 184);
+  }
 
   h2,
   span {
-    color: rgb(221, 221, 221);
+    font-size: 12px;
+    color: rgb(212, 201, 190);
+    margin: 0;
+    padding: 5px 10px;
   }
 }
 
 .existence {
   display: flex;
-  flex-direction: row;
-  background: blue;
+  justify-content: space-between;
+
+  >div {
+    display: flex;
+  }
 }

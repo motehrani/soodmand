@@ -1,23 +1,19 @@
 import { FC } from 'react'
 import Image from 'next/image'
 
-export interface FacilitiesProps {
+export interface FacilityProps {
   title: string
   description: string
   image: string
 }
 
-export const Facilities: FC<FacilitiesProps> = ({
-  title,
-  description,
-  image,
-}) => {
+export const Facility: FC<FacilityProps> = ({ title, description, image }) => {
   return (
-    <div className="facilities">
+    <div className="facility">
       <Image src={image} alt="logo" width={35} height={35}></Image>
       <div>
-        <h6>{title}</h6>
-        <h5>{description}</h5>
+        <h2 className="title">{title}</h2>
+        <h2 className="description">{description}</h2>
       </div>
     </div>
   )

@@ -3,18 +3,40 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 96px;
+
+  #opening {
+    display: flex;
+  }
 
   .facilities {
     display: flex;
-    flex-direction: row;
     width: 100%;
     max-width: 1366px;
     justify-content: space-around;
     direction: rtl;
+    padding: 15px 5px;
+    border: 1px solid #FFD100;
+    margin-bottom: 15px;
 
-    h6,
-    h5 {
-      color: aquamarine;
+    h2 {
+      margin: 0;
+      padding-right: 20px;
+    }
+
+    .facility {
+      display: flex;
+      align-items: center;
+
+      .title {
+        color: white;
+        font-size: 14px;
+      }
+
+      .description {
+        color: beige;
+        font-size: 10px;
+      }
     }
   }
 }
