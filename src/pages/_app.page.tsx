@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 import { RecoilRoot } from 'recoil'
 
-import Layout from './../shared/components/layout'
+import Layout from '../shared/components/layout'
 
 import '@src/shared/styles/_ant.less'
 import '@src/shared/styles/index.scss'
