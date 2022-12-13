@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
 import { RecoilRoot } from 'recoil'
 
 import Layout from './../shared/components/layout'
@@ -11,9 +12,11 @@ import '@src/shared/styles/index.scss'
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <RecoilRoot>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </RecoilRoot>
   )
 }
