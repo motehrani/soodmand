@@ -23,15 +23,16 @@ export const Opening = () => {
           image="/svg/truck.svg"
         />
         <Facility
-          title="پشتیبانی 7/24"
-          description="خرید با متخصص"
-          image="/svg/hours.svg"
-        />
-        <Facility
           title="بازگشت وجه"
           description="مرجوع رایگان بالای 200 تومان"
           image="/svg/refund.svg"
         />
+        <Facility
+          title="پشتیبانی 7/24"
+          description="خرید با متخصص"
+          image="/svg/hours.svg"
+        />
+
         <Facility
           title="پرداخت امن"
           description="محافظت شده توسط پی پل"
