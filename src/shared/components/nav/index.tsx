@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Button } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 
 import { QuickAccess } from './quick-access'
 
 export const Nav = () => {
   return (
-    <nav className="nav-bar">
+    <div className="nav-bar">
       <div>
         <div className="icon">
           <Image src="/svg/book.svg" alt="LOGO" width={25} height={25} />
@@ -15,7 +15,6 @@ export const Nav = () => {
         </div>
 
         <div className="navigators">
-          <Button color="primary">some</Button>
           <div>
             <QuickAccess
               title="پشتیبانی"
@@ -55,6 +54,6 @@ export const Nav = () => {
           </Link>
         </div>
       </div>
-    </nav>
+    </div>
   )
 }

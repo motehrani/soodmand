@@ -8,7 +8,7 @@ import Layout from '../shared/components/layout'
 
 import '@src/shared/styles/_ant.less'
 import '@src/shared/styles/index.scss'
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
