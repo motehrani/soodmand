@@ -3,7 +3,7 @@
 const withAntdLess = require('next-plugin-antd-less');
 
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
   lessVarsFilePath: './src/shared/styles/_ant.less',
   lessVarsFilePathAppendToEndOfContent: false,

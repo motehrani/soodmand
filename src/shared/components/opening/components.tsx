@@ -67,12 +67,18 @@ export const Slider: FC<SliderProps> = ({ slides }) => {
 
   const goToNextSlide = () => {
     setActiveSlide(currentActiveSlide => {
+      if (currentActiveSlide === slides.length - 1) {
+        return 0
+      }
       return currentActiveSlide + 1
     })
   }
 
   const goToPrevSlide = () => {
     setActiveSlide(currentActiveSlide => {
+      if (currentActiveSlide === 0) {
+        return slides.length - 1
+      }
       return currentActiveSlide - 1
     })
   }
