@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -64,7 +64,7 @@ export const Slider: FC<SliderProps> = ({ slides }) => {
       active: index === activeSlide,
     })
   }
-
+  // but there is no map or useEffect on line64... when this line checking classes
   const goToNextSlide = () => {
     setActiveSlide(currentActiveSlide => {
       if (currentActiveSlide === slides.length - 1) {
@@ -83,6 +83,13 @@ export const Slider: FC<SliderProps> = ({ slides }) => {
     })
   }
 
+  useEffect(() => {
+    const interValidId = window.setInterval(goToNextSlide, 5000)
+
+    return () => {
+      window.clearInterval(interValidId)
+    }
+  }, [])
   return (
     <div className="slider">
       {slides.map((slide, index) => (
