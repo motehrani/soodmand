@@ -7,85 +7,88 @@
   border-bottom: 1px solid #000000;
 
   >div {
-    padding: 5px 10px;
-    display: flex;
-    width: 100%;
-    max-width: 1366px;
-    margin: auto;
-    align-items: center;
 
-    >.icon {
+
+    >div {
+      padding: 5px 10px;
       display: flex;
-
-      >img {
-        padding-left: 7px;
-      }
-    }
-
-    >.navigators {
-      display: flex;
-      flex: 1;
+      width: 100%;
+      max-width: 1366px;
+      margin: auto;
       align-items: center;
-      justify-content: center;
 
-      >div {
+      >.icon {
         display: flex;
 
-        >.quick-access {
-          display: flex;
-          align-items: center;
-          margin-right: 40px;
-
-          >div {
-            display: flex;
-            flex-direction: column;
-
-            >h2 {
-              margin: 0;
-              text-align: right;
-              color: #a3a3a3;
-              font-size: 10px;
-            }
-
-            .description {
-              color: #FFD100;
-            }
-          }
-
-          >img {
-            max-width: 26px;
-            max-height: 26px;
-            margin-left: 6px;
-          }
+        >img {
+          padding-left: 7px;
         }
+      }
 
-        >.catagories {
+      >.navigators {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+
+        >div {
           display: flex;
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          align-items: center;
 
-          >li {
-            >a {
-              padding: 10px 20px;
-              text-decoration: none;
-              border-radius: 6px;
-              color: #dddddd;
-              font-size: 12px;
+          >.quick-access {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
 
-              &:hover {
-                background: #25201b;
+            >div {
+              display: flex;
+              flex-direction: column;
+
+              >h2 {
+                margin: 0;
+                text-align: right;
+                color: #a3a3a3;
+                font-size: 10px;
+              }
+
+              .description {
+                color: #FFD100;
+              }
+            }
+
+            >img {
+              max-width: 26px;
+              max-height: 26px;
+              margin-left: 6px;
+            }
+          }
+
+          >.catagories {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+
+            >li {
+              >a {
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 6px;
+                color: #dddddd;
+                font-size: 12px;
+
+                &:hover {
+                  background: #25201b;
+                }
               }
             }
           }
         }
       }
-    }
 
-    #logo {
-      display: flex;
+      #logo {
+        display: flex;
+      }
     }
-
   }
 }
