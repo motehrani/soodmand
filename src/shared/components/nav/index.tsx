@@ -9,13 +9,13 @@ export const Nav = () => {
     <div className="nav-bar">
       <Container>
         <Row>
-          <Col className="icon" xl="1">
+          <Col className="icon" xl="2" lg="2" md="2">
             <Image src="/svg/book.svg" alt="LOGO" width={25} height={25} />
             <Image src="/svg/heart.svg" alt="LOGO" width={25} height={25} />
             <Image src="/svg/person.svg" alt="LOGO" width={25} height={25} />
           </Col>
 
-          <Col xl="6" className="navigators">
+          <Col className="navigators" xl="6" lg="6" md="6">
             <div>
               <QuickAccess
                 title="پشتیبانی"
@@ -49,9 +49,9 @@ export const Nav = () => {
             </div>
           </Col>
 
-          <Col xl="1" className="logo">
+          <Col className="logo" xl="2" lg="2" md="2">
             <Link href="/" id="logo">
-              <Image src="/img/sood.png" alt="LOGO" width={100} height={50} />
+              <Image src="/svg/logo.svg" alt="LOGO" width={100} height={50} />
             </Link>
           </Col>
         </Row>

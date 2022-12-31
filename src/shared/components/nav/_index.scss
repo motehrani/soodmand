@@ -7,18 +7,12 @@
   border-bottom: 1px solid #000000;
 
   >div {
-
-
     >div {
       padding: 5px 10px;
-      display: flex;
-      width: 100%;
-      max-width: 1366px;
       margin: auto;
       align-items: center;
 
       >.icon {
-        display: flex;
 
         >img {
           padding-left: 7px;
@@ -27,7 +21,7 @@
 
       >.navigators {
         display: flex;
-        flex: 1;
+        flex: 2;
         align-items: center;
         justify-content: center;
 
@@ -92,3 +86,19 @@
     }
   }
 }
+
+@media(min-width: 720px) and (max-width: 1200px) {
+  .catagories {
+    >li {
+      >a {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+// why doesn't work
+
+// so question about media query: everything outside
+// of the media query that are different to content
+// of inside it will execute too?
