@@ -1,15 +1,36 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
+import Image from 'next/image'
 
-export const Test = () => {
+const Test = () => {
   return (
-    <Navbar className="test">
-      <li></li>
+    <Navbar>
+      <NavItem />
+      <NavItem />
+      <NavItem />
     </Navbar>
   )
 }
 
-function Navbar: FC<> (props) {
-  <nav className="navbar">
-    <ul className="navbar-nav">{props.children}</ul>
-  </nav>
+interface NavbarProps {
+  children: ReactNode
 }
+
+const Navbar: FC<NavbarProps> = ({ children }) => {
+  return (
+    <nav className="navbar">
+      <ul className="navbar-nav">{children}</ul>
+    </nav>
+  )
+}
+
+const NavItem = () => {
+  return (
+    <li className="nav-item">
+      <a href="#" className="icon-button">
+        <Image alt="emj" src="/svg/test/e1.svg" width="15" height="15" />
+      </a>
+    </li>
+  )
+}
+
+export default Test
