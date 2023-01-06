@@ -51,7 +51,13 @@ export const Nav = () => {
 
           <Col className="logo" xl="2" lg="2" md="2">
             <Link href="/" id="logo">
-              <Image src="/svg/logo.svg" alt="LOGO" width={100} height={50} />
+              <Image
+                src="/svg/logo.svg"
+                draggable="false"
+                alt="LOGO"
+                width={100}
+                height={50}
+              />
             </Link>
           </Col>
         </Row>

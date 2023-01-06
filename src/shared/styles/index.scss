@@ -16,6 +16,15 @@ body {
   font-family: 'Vazirmatn', sans-serif;
 }
 
+.material-icons {
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+
+}
+
 *,
 *::before,
 *::after {

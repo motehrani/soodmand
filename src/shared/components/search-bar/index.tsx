@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { Cat } from './components'
+
 export const SearchBar = () => {
   return (
     <div className="search-bar">
@@ -15,9 +17,7 @@ export const SearchBar = () => {
         </div>
 
         <div className="grouping">
-          <span className="material-icons">expand_more</span>
-          <h2>دسته بندی</h2>
-          <span className="material-icons">list</span>
+          <Cat />
         </div>
       </div>
     </div>
