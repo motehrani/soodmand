@@ -50,7 +50,7 @@ export const items: MenuProps['items'] = [
 ]
 
 export const Cat: React.FC = () => (
-  <Dropdown menu={{ items }} placement="bottomRight" open>
+  <Dropdown menu={{ items }} placement="bottomRight">
     <a
       onClick={e => e.preventDefault()}
       className="ant-dropdown-trigger dropdown"
