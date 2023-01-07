@@ -3,31 +3,30 @@
   justify-content: center;
   width: 100%;
 
-  >div {
-    display: flex;
-    max-width: 1366px;
-    gap: 0px 30px;
-  }
 }
 
 .cat-card {
-  display: flex;
-  flex-direction: column;
-  direction: rtl;
-  max-width: 1366px;
-  border: 1px solid rgb(255, 218, 71);
+  >div {
+    direction: rtl;
+    max-width: 1366px;
+    border: 1px solid rgb(255, 218, 71);
 
-  .title {
-    font-size: 14px;
-    color: rgb(222, 222, 184);
-  }
+    .title {
+      font-size: 14px;
+      color: rgb(222, 222, 184);
+    }
 
-  h2,
-  span {
-    font-size: 12px;
-    color: rgb(212, 201, 190);
-    margin: 0;
-    padding: 5px 10px;
+    h2,
+    span {
+      font-size: 12px;
+      color: rgb(212, 201, 190);
+      margin: 0;
+      padding: 5px 10px;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }
 

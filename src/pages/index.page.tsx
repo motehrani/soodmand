@@ -4,10 +4,11 @@ import { Best } from '@src/shared/components/best'
 import { Space } from '@src/shared/components/space'
 import { Space2 } from '@src/shared/components/space2'
 import { TheNews } from '@src/shared/components/latest-news'
+import { Container } from 'reactstrap'
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <Opening />
       <CatCards />
       <Best />
@@ -15,7 +16,7 @@ const Home = () => {
       <Best />
       <Space2 />
       <TheNews />
-    </div>
+    </Container>
   )
 }
 

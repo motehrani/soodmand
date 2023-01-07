@@ -1,14 +1,15 @@
 import { CatCard } from './component'
+import { Row, Col } from 'reactstrap'
 
 export const CatCards = () => {
   return (
     <div className="cat-cards">
-      <div>
+      <Row>
         <CatCard />
         <CatCard />
         <CatCard />
         <CatCard />
-      </div>
+      </Row>
     </div>
   )
 }
