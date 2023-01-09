@@ -10,12 +10,12 @@ export const Nav = () => {
       <Container>
         <Row>
           <Col className="icon" xl="2" lg="2" md="2">
-            <Image src="/svg/book.svg" alt="LOGO" width={25} height={25} />
-            <Image src="/svg/heart.svg" alt="LOGO" width={25} height={25} />
-            <Image src="/svg/person.svg" alt="LOGO" width={25} height={25} />
+            <Image src="/svg/book.svg" alt="LOGO" width={35} height={35} />
+            <Image src="/svg/heart.svg" alt="LOGO" width={35} height={35} />
+            <Image src="/svg/person.svg" alt="LOGO" width={35} height={35} />
           </Col>
 
-          <Col className="navigators" xl="6" lg="6" md="6">
+          <Col className="navigators" xl="8" lg="8" md="8">
             <div>
               <QuickAccess
                 title="پشتیبانی"

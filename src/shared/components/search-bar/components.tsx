@@ -1,4 +1,4 @@
-import { Dropdown, Space } from 'antd'
+import { Dropdown } from 'antd'
 
 import type { MenuProps } from 'antd'
 
@@ -51,15 +51,10 @@ export const items: MenuProps['items'] = [
 
 export const Cat: React.FC = () => (
   <Dropdown menu={{ items }} placement="bottomRight">
-    <a
-      onClick={e => e.preventDefault()}
-      className="ant-dropdown-trigger dropdown"
-    >
-      <Space>
-        <span className="material-icons">expand_more</span>
-        دسته بندی
-        <span className="material-icons">list</span>
-      </Space>
+    <a onClick={e => e.preventDefault()} className="dropdown">
+      <span className="material-icons">expand_more</span>
+      دسته بندی
+      <span className="material-icons">list</span>
     </a>
   </Dropdown>
 )

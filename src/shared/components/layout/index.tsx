@@ -1,3 +1,4 @@
+import { Container } from 'reactstrap'
 import { Footer } from '../footer'
 import { Nav } from '../nav'
 import { SearchBar } from '../search-bar'
@@ -12,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Nav />
       <SearchBar />
       <div className="page-content">
-        <div>{children}</div>
+        <Container>{children}</Container>
       </div>
       <Footer />
     </div>

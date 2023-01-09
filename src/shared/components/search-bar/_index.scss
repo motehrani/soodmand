@@ -6,68 +6,83 @@
   top: 60px;
   left: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
 
-  >div {
-    padding: 10px 10px;
-    width: 100%;
-    height: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex: 1;
-    justify-content: space-between;
-    padding: 0;
-    margin: auto;
+  >.container {
 
-    h2 {
-      font-size: 12px;
-      padding-right: 7px;
-    }
+    >.row {
+      padding: 10px 10px;
+      padding: 0;
 
-    >.offers {
-      span {
-        padding: 0px 20px;
+      >.column {
+
+        >div {
+          display: flex;
+          align-items: center;
+
+        }
+
+        h2 {
+          font-size: 12px;
+          padding-right: 7px;
+          margin: 0;
+        }
+
+        >.offers {
+
+          span {
+            padding: 0px 20px;
+          }
+        }
+
+        >.search-box {
+          justify-content: space-between;
+          background: rgb(240, 240, 240);
+          border-radius: 30px;
+          height: 25px;
+          overflow: hidden;
+
+          >input {
+            border: none;
+            width: 500px;
+            height: 100%;
+            outline: none;
+            direction: rtl;
+            padding: 0 10px;
+            background: inherit;
+          }
+
+          >span {
+            cursor: pointer;
+            padding-left: 10px;
+          }
+        }
+
+        >.grouping {
+          flex-direction: row-reverse;
+
+          span {
+            padding: 0 25px;
+          }
+
+          >.dropdown {
+            display: flex;
+            align-items: center;
+
+            >.ant-space {
+              display: flex;
+              align-items: center;
+
+              >.ant-space-item {}
+            }
+
+            text-decoration: none;
+            color: black;
+          }
+        }
       }
-    }
-
-    >.search-box {
-      background: white;
-      border-radius: 30px;
-      height: 25px;
-      overflow: hidden;
-
-      >input {
-        border: none;
-        width: 500px;
-        height: 100%;
-        outline: none;
-        direction: rtl;
-        padding: 0 10px;
-      }
-
-      >span {
-        cursor: pointer;
-      }
-    }
-
-    >.grouping {
-      padding: 0px 20px;
-
-      span {
-        padding: 0px 10px;
-      }
-
-      .dropdown {
-        text-decoration: none;
-        color: black;
-      }
-    }
-
-    >div {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import classNames from 'classnames'
+import { Col } from 'reactstrap'
 
 export interface FacilityProps {
   title: string
@@ -12,13 +13,15 @@ export interface FacilityProps {
 
 export const Facility: FC<FacilityProps> = ({ title, description, image }) => {
   return (
-    <div className="facility">
-      <Image src={image} alt="logo" width={35} height={35}></Image>
-      <div>
-        <h2 className="title">{title}</h2>
-        <h2 className="description">{description}</h2>
+    <Col xxl="3" xl="3" lg="3" md="3" sm="3" xs="3">
+      <div className="facility">
+        <Image src={image} alt="logo" width={35} height={35}></Image>
+        <div>
+          <h2 className="title">{title}</h2>
+          <h2 className="description">{description}</h2>
+        </div>
       </div>
-    </div>
+    </Col>
   )
 }
 

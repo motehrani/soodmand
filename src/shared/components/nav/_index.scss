@@ -5,28 +5,33 @@
   left: 0;
   right: 0;
   border-bottom: 1px solid #000000;
+  z-index: 10;
 
   >div {
+
+    // container
     >div {
+      // row
       padding: 5px 10px;
       margin: auto;
       align-items: center;
 
+      >div {
+        // col
+        padding: 0;
+      }
+
       >.icon {
 
         >img {
-          padding-left: 7px;
+          padding: 0px 7px;
         }
       }
 
       >.navigators {
-        display: flex;
-        flex: 2;
-        align-items: center;
-        justify-content: center;
-
         >div {
           display: flex;
+          justify-content: center;
 
           >.quick-access {
             display: flex;
@@ -80,8 +85,13 @@
         }
       }
 
-      #logo {
-        display: flex;
+      >.logo {
+        padding: 0;
+
+        >#logo {
+          display: flex;
+          flex-direction: row-reverse;
+        }
       }
     }
   }

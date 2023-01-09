@@ -11,7 +11,7 @@
   .slider {
     position: relative;
     background: white;
-    width: 1300px;
+    width: 1200px;
     min-height: 500px;
     overflow: hidden;
     border-radius: 10px;
@@ -120,34 +120,38 @@
   }
 
 
-
-  .facilities {
-    display: flex;
+  .row {
     width: 100%;
-    max-width: 1366px;
-    justify-content: space-around;
-    direction: rtl;
-    padding: 15px 5px;
-    border: 1px solid #FFD100;
-    margin-bottom: 15px;
 
-    h2 {
-      margin: 0;
-      padding-right: 20px;
-    }
-
-    .facility {
+    .facilities {
       display: flex;
-      align-items: center;
+      direction: rtl;
+      padding: 15px 5px;
+      border: 1px solid #FFD100;
+      margin-bottom: 15px;
 
-      .title {
-        color: white;
-        font-size: 14px;
+
+
+      h2 {
+        margin: 0;
+        padding-right: 20px;
       }
 
-      .description {
-        color: beige;
-        font-size: 10px;
+      >div {
+        .facility {
+          display: flex;
+          align-items: center;
+
+          .title {
+            color: white;
+            font-size: 14px;
+          }
+
+          .description {
+            color: beige;
+            font-size: 10px;
+          }
+        }
       }
     }
   }
