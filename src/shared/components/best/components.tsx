@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import Image from 'next/image'
+import { Row, Col } from 'reactstrap'
 
 export interface ProductProps {
   title: string
@@ -20,17 +21,19 @@ export interface SpecialProductProps {
 
 export const TitleBar = () => {
   return (
-    <div className="best-title-bar">
-      <div>
-        <div className="best-title">
-          <h2>محبوب ترین</h2>
-        </div>
-        <div className="best-cat">
-          <h2>محصولات نقره</h2>
-          <h2>محصولات زنانه</h2>
+    <Row>
+      <div className="best-title-bar">
+        <div>
+          <div className="best-title">
+            <h2>محبوب ترین</h2>
+          </div>
+          <div className="best-cat">
+            <h2>محصولات نقره</h2>
+            <h2>محصولات زنانه</h2>
+          </div>
         </div>
       </div>
-    </div>
+    </Row>
   )
 }
 
