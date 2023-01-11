@@ -40,25 +40,31 @@ export const TitleBar = () => {
 export const Products = () => {
   return (
     <div className="products">
-      <div>
-        <div className="side-products">
-          <ProductCards />
-        </div>
-        <div className="special-product">
-          <SpecialProduct
-            title="گل"
-            description="دسته گل محمدی"
-            image="/img/product.jpg"
-            price={100}
-            rates={1.5}
-            discount={13}
-            deadline={10}
-          />
-        </div>
-        <div className="side-products">
-          <ProductCards />
-        </div>
-      </div>
+      <Row>
+        <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
+          <div className="side-products">
+            <ProductCards />
+          </div>
+        </Col>
+        <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
+          <div className="special-product">
+            <SpecialProduct
+              title="گل"
+              description="دسته گل محمدی"
+              image="/img/product.jpg"
+              price={100}
+              rates={1.5}
+              discount={13}
+              deadline={10}
+            />
+          </div>
+        </Col>
+        <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
+          <div className="side-products">
+            <ProductCards />
+          </div>
+        </Col>
+      </Row>
     </div>
   )
 }
@@ -76,7 +82,7 @@ const Product: FC<ProductProps> = ({
         <h2>{title}</h2>
         <h2>{description}</h2>
       </div>
-      <Image src={image} alt="logo" width={200} height={146}></Image>
+      <Image src={image} alt="logo" width={180} height={130}></Image>
       <div>
         <h2>{price} تومان</h2>
         <h2>{rates} بازخورد </h2>

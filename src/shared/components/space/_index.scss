@@ -1,4 +1,9 @@
 .space {
-  display: flex;
-  justify-content: center;
+  >div {
+    >div {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+  }
 }

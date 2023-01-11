@@ -1,6 +1,8 @@
+import { Col } from 'reactstrap'
+
 export const LatestNews = () => {
   return (
-    <div className="latest-news">
+    <Col className="latest-news">
       <div>
         <div>
           <h2>آخرین اخبار</h2>
@@ -21,6 +23,6 @@ export const LatestNews = () => {
           استفاده از
         </h2>
       </div>
-    </div>
+    </Col>
   )
 }
