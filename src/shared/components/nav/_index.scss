@@ -1,3 +1,6 @@
+$soodColor: #7556FC;
+$soodColor2: #9880FA;
+
 .nav-bar {
   background: rgb(17, 21, 13);
   position: fixed;
@@ -50,7 +53,7 @@
               }
 
               .description {
-                color: #FFD100;
+                color: $soodColor2;
               }
             }
 

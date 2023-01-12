@@ -41,7 +41,7 @@ export const Products = () => {
   return (
     <div className="products">
       <Row>
-        <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
+        <Col xxl="4" xl="4" lg="4" md="4" sm="6" xs="6">
           <div className="side-products">
             <ProductCards />
           </div>
@@ -59,7 +59,7 @@ export const Products = () => {
             />
           </div>
         </Col>
-        <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
+        <Col xxl="4" xl="4" lg="4" md="4" sm="6" xs="6">
           <div className="side-products">
             <ProductCards />
           </div>
@@ -82,7 +82,7 @@ const Product: FC<ProductProps> = ({
         <h2>{title}</h2>
         <h2>{description}</h2>
       </div>
-      <Image src={image} alt="logo" width={180} height={130}></Image>
+      <Image src={image} alt="logo" width={150} height={110}></Image>
       <div>
         <h2>{price} تومان</h2>
         <h2>{rates} بازخورد </h2>
@@ -105,7 +105,7 @@ const SpecialProduct: FC<SpecialProductProps> = ({
       <div>
         <h2>پیشنهاد ویژه</h2>
         <h2>{discount}</h2>
-        <Image src={image} alt="logo" width={400} height={292}></Image>
+        <Image src={image} alt="logo" width={350} height={255}></Image>
       </div>
 
       <div>

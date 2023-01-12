@@ -1,7 +1,10 @@
+$soodColor: #7556FC;
+$soodColor2: #9880FA;
+
 .search-bar {
   width: 100%;
   height: 35px;
-  background: #FFD100;
+  background: $soodColor2;
   position: fixed;
   top: 60px;
   left: 0;
