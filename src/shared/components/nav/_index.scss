@@ -81,9 +81,13 @@ $soodColor2: #9880FA;
                 color: #dddddd;
                 font-size: 12px;
 
-                @include respect(lg-phone) {
-                  font-size: 2px;
-                }
+                @include map-respect(
+                  background,
+                  (
+                    lg: red,
+                    md: yellow,
+                  )
+                );
 
                 &:hover {
                   background: #25201b;

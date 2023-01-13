@@ -65,3 +65,14 @@
     }
   }
 }
+
+@mixin map-respect($property, $settings, $infix: max) {
+  $bps: map-keys($settings);
+
+  @each $bp in $bps {
+    $value: map.get($settings, $bp);
+    @include respect($bp, $infix) {
+      #{$property}: $value;
+    }
+  }
+}
