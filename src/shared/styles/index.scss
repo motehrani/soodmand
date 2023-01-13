@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'functions';
+@import 'mixins';
 @import 'components';
 @import 'pages';
 @import 'ant-reset';
@@ -6,8 +9,8 @@
 
 /* Define standard variables and values for website */
 $bgColor: rgb(15, 12, 8);
-$soodColor: #7556FC;
-$soodColor2: #9880FA;
+$soodColor: #7556fc;
+$soodColor2: #9880fa;
 
 body {
   background-color: $bgColor !important;
@@ -24,7 +27,6 @@ body {
 
 img {
   -webkit-user-drag: none;
-
 }
 
 *,
