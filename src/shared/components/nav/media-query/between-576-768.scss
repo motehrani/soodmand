@@ -1,0 +1,50 @@
+@media screen and (min-width: 576) and (max-width: 768px) {
+  .nav-bar {
+    >div {
+
+      // container
+      >div {
+        // row
+        padding: 3px 7px;
+
+        >.icon {
+          >img {
+            margin: 0px 3px;
+            width: 14px;
+            height: 14px;
+          }
+        }
+
+        >.navigators {
+          >div {
+            >.quick-access {
+              margin-right: 22px;
+
+              >div {
+                >h2 {
+                  font-size: 7px;
+                }
+              }
+
+              >img {
+                width: 18px;
+                height: 18px;
+                margin-left: 4px;
+              }
+            }
+
+            >.catagories {
+
+              >li {
+                >a {
+                  padding: 5px 10px;
+                  font-size: 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

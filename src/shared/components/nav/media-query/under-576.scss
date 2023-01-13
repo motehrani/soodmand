@@ -1,0 +1,50 @@
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    >div {
+
+      // container
+      >div {
+        // row
+        padding: 3px 6px;
+
+        >.icon {
+          >img {
+            margin: 0px 2px;
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        >.navigators {
+          >div {
+            >.quick-access {
+              margin-right: 18px;
+
+              >div {
+                >h2 {
+                  font-size: 6.5px;
+                }
+              }
+
+              >img {
+                width: 16px;
+                height: 16px;
+                margin-left: 3px;
+              }
+            }
+
+            >.catagories {
+
+              >li {
+                >a {
+                  padding: 4px 8px;
+                  font-size: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

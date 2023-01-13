@@ -10,9 +10,9 @@ export const Nav = () => {
       <Container>
         <Row>
           <Col className="icon" xl="2" lg="2" md="2">
-            <Image src="/svg/book.svg" alt="LOGO" width={35} height={35} />
-            <Image src="/svg/heart.svg" alt="LOGO" width={35} height={35} />
-            <Image src="/svg/person.svg" alt="LOGO" width={35} height={35} />
+            <Image src="/svg/book.svg" alt="LOGO" width={22} height={22} />
+            <Image src="/svg/heart.svg" alt="LOGO" width={22} height={22} />
+            <Image src="/svg/person.svg" alt="LOGO" width={22} height={22} />
           </Col>
 
           <Col className="navigators" xl="8" lg="8" md="8">
@@ -55,8 +55,8 @@ export const Nav = () => {
                 src="/svg/logo.svg"
                 draggable="false"
                 alt="LOGO"
-                width={100}
-                height={50}
+                width={75}
+                height={36}
               />
             </Link>
           </Col>

@@ -27,7 +27,9 @@ $soodColor2: #9880FA;
       >.icon {
 
         >img {
-          padding: 0px 7px;
+          margin: 0px 5px;
+          width: 22px;
+          height: 22px;
         }
       }
 
@@ -58,8 +60,8 @@ $soodColor2: #9880FA;
             }
 
             >img {
-              max-width: 26px;
-              max-height: 26px;
+              width: 26px;
+              height: 26px;
               margin-left: 6px;
             }
           }
@@ -78,6 +80,8 @@ $soodColor2: #9880FA;
                 border-radius: 6px;
                 color: #dddddd;
                 font-size: 12px;
+
+
 
                 &:hover {
                   background: #25201b;
@@ -100,18 +104,8 @@ $soodColor2: #9880FA;
   }
 }
 
-@media(min-width: 720px) and (max-width: 1200px) {
-  .catagories {
-    >li {
-      >a {
-        font-size: 8px;
-      }
-    }
-  }
-}
-
-// why doesn't work
-
-// so question about media query: everything outside
-// of the media query that are different to content
-// of inside it will execute too?
+@import './media-query/media.scss';
+// $container-max-widths:
+// ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px );
+// In addition to customizing the Sass, you can also create
+//  your own containers with our Sass mixin.
