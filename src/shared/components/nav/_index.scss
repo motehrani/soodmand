@@ -72,7 +72,6 @@ $soodColor2: #9880FA;
             align-items: center;
             margin-right: 40px;
 
-
             @include map-respect(margin-right,
               (xxl: 35px,
                 xl: 30px,
@@ -98,6 +97,10 @@ $soodColor2: #9880FA;
                     md: 7px,
                     sm: 6px,
                     xs: 5px));
+              }
+
+              @media screen and (max-width: 576px) {
+                display: none;
               }
 
               .description {
@@ -188,18 +191,18 @@ $soodColor2: #9880FA;
             height: 36px;
             @include map-respect(width,
               (xxl: 70px,
-                xl: 60px,
-                lg: 50px,
-                md: 40px,
-                sm: 30px,
-                xs: 20px));
+                xl: 65px,
+                lg: 60,
+                md: 50px,
+                sm: 45px,
+                xs: 40px));
             @include map-respect(height,
               (xxl: 35,
-                xl: 30px,
-                lg: 25px,
-                md: 20px,
-                sm: 15px,
-                xs: 10px));
+                xl: 33px,
+                lg: 30px,
+                md: 25px,
+                sm: 23px,
+                xs: 20px));
           }
         }
       }
