@@ -19,6 +19,14 @@ $soodColor2: #9880FA;
       margin: auto;
       align-items: center;
 
+      @include map-respect(padding,
+        (xxl: 5px 9px,
+          xl: 4px 8px,
+          lg: 4px 7px,
+          md: 3px 7px,
+          sm: 3px 6px,
+          xs: 2px 5px));
+
       >div {
         // col
         padding: 0;
@@ -27,9 +35,30 @@ $soodColor2: #9880FA;
       >.icon {
 
         >img {
-          margin: 0px 5px;
           width: 22px;
           height: 22px;
+          margin: 0px 5px;
+          @include map-respect(width,
+            (xxl: 20px,
+              xl: 18px,
+              lg: 16px,
+              md: 14px,
+              sm: 12px,
+              xs: 10px));
+          @include map-respect(height,
+            (xxl: 20px,
+              xl: 18px,
+              lg: 16px,
+              md: 14px,
+              sm: 12px,
+              xs: 10px));
+          @include map-respect(margin,
+            (xxl: 0px 5px,
+              xl: 0px 5px,
+              lg: 0px 4px,
+              md: 0px 4px,
+              sm: 0px 3px,
+              xs: 0px 3px));
         }
       }
 
@@ -43,6 +72,15 @@ $soodColor2: #9880FA;
             align-items: center;
             margin-right: 40px;
 
+
+            @include map-respect(margin-right,
+              (xxl: 35px,
+                xl: 30px,
+                lg: 25px,
+                md: 20px,
+                sm: 15px,
+                xs: 10px));
+
             >div {
               display: flex;
               flex-direction: column;
@@ -52,6 +90,14 @@ $soodColor2: #9880FA;
                 text-align: right;
                 color: #a3a3a3;
                 font-size: 10px;
+
+                @include map-respect(font-size,
+                  (xxl: 10px,
+                    xl: 9px,
+                    lg: 8px,
+                    md: 7px,
+                    sm: 6px,
+                    xs: 5px));
               }
 
               .description {
@@ -63,6 +109,28 @@ $soodColor2: #9880FA;
               width: 26px;
               height: 26px;
               margin-left: 6px;
+
+              @include map-respect(width,
+                (xxl: 23px,
+                  xl: 20px,
+                  lg: 16px,
+                  md: 13px,
+                  sm: 10px,
+                  xs: 7px));
+              @include map-respect(height,
+                (xxl: 23px,
+                  xl: 20px,
+                  lg: 16px,
+                  md: 13px,
+                  sm: 10px,
+                  xs: 7px));
+              @include map-respect(margin-left,
+                (xxl:6px,
+                  xl: 5px,
+                  lg: 5px,
+                  md: 4px,
+                  sm: 4px,
+                  xs: 3px));
             }
           }
 
@@ -81,13 +149,21 @@ $soodColor2: #9880FA;
                 color: #dddddd;
                 font-size: 12px;
 
-                @include map-respect(
-                  background,
-                  (
-                    lg: red,
-                    md: yellow,
-                  )
-                );
+                @include map-respect(padding,
+                  (xxl: 9px 18px,
+                    xl: 8px 16px,
+                    lg: 7px 14px,
+                    md: 6px 12px,
+                    sm: 5px 10px,
+                    xs: 4px 8px));
+
+                @include map-respect(font-size,
+                  (xxl: 11px,
+                    xl: 10px,
+                    lg: 9px,
+                    md: 8px,
+                    sm: 7px,
+                    xs: 6px));
 
                 &:hover {
                   background: #25201b;
@@ -105,12 +181,32 @@ $soodColor2: #9880FA;
           display: flex;
           flex-direction: row-reverse;
         }
+
+        >a {
+          >img {
+            width: 75px;
+            height: 36px;
+            @include map-respect(width,
+              (xxl: 70px,
+                xl: 60px,
+                lg: 50px,
+                md: 40px,
+                sm: 30px,
+                xs: 20px));
+            @include map-respect(height,
+              (xxl: 35,
+                xl: 30px,
+                lg: 25px,
+                md: 20px,
+                sm: 15px,
+                xs: 10px));
+          }
+        }
       }
     }
   }
 }
 
-// @import './media-query/media.scss';
 // $container-max-widths:
 // ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px );
 // In addition to customizing the Sass, you can also create
