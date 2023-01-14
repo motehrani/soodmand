@@ -4,12 +4,9 @@ $soodColor3: #fffcf4;
 
 .search-bar {
   background: $soodColor3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+
   border-bottom: 1px solid #000000;
-  z-index: 10;
+
 
   >div {
 

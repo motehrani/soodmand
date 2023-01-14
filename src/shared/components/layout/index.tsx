@@ -10,8 +10,10 @@ export interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="page-layout">
-      <SoodmandSearch />
-      <NavBar />
+      <div className="sood-nav">
+        <SoodmandSearch />
+        <NavBar />
+      </div>
       <div className="page-content">
         <Container>{children}</Container>
       </div>
