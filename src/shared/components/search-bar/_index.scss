@@ -14,16 +14,15 @@ $soodColor2: #9880FA;
   z-index: 10;
 
   >.container {
-
     >.row {
       padding: 0;
 
-      >.column {
+      >div {
 
+        // col
         >div {
           display: flex;
           align-items: center;
-
         }
 
         h2 {
@@ -32,38 +31,7 @@ $soodColor2: #9880FA;
           margin: 0;
         }
 
-        >.offers {
-
-          span {
-            padding: 0px 20px;
-          }
-        }
-
-        >.search-box {
-          justify-content: space-between;
-          background: rgb(240, 240, 240);
-          border-radius: 30px;
-          height: 25px;
-          overflow: hidden;
-
-          >input {
-            border: none;
-            width: 500px;
-            height: 100%;
-            outline: none;
-            direction: rtl;
-            padding: 0 10px;
-            background: inherit;
-          }
-
-          >span {
-            cursor: pointer;
-            padding-left: 10px;
-          }
-        }
-
         >.grouping {
-          flex-direction: row-reverse;
 
           span {
             padding: 0 25px;
@@ -77,11 +45,120 @@ $soodColor2: #9880FA;
               display: flex;
               align-items: center;
 
-              >.ant-space-item {}
             }
 
             text-decoration: none;
             color: black;
+          }
+        }
+
+        >.navigators {
+          display: flex;
+          justify-content: center;
+
+          >.catagories {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            align-items: center;
+
+            >li {
+              >a {
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 6px;
+                color: black;
+                font-size: 12px;
+
+                @include map-respect(padding,
+                  (xxl: 9px 18px,
+                    xl: 8px 16px,
+                    lg: 7px 14px,
+                    md: 6px 12px,
+                    sm: 5px 10px,
+                    xs: 4px 8px));
+
+                @include map-respect(font-size,
+                  (xxl: 11px,
+                    xl: 10px,
+                    lg: 9px,
+                    md: 8px,
+                    sm: 7px,
+                    xs: 6px));
+
+                &:hover {
+                  background: #a58fff;
+                }
+              }
+            }
+          }
+        }
+
+        >.quick {
+          >.quick-access {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+
+            @include map-respect(margin-right,
+              (xxl: 35px,
+                xl: 30px,
+                lg: 25px,
+                md: 20px,
+                sm: 15px,
+                xs: 10px));
+
+            >div {
+              display: flex;
+              flex-direction: column;
+
+              >h2 {
+                margin: 0;
+                text-align: right;
+                font-size: 10px;
+
+                @include map-respect(font-size,
+                  (xxl: 10px,
+                    xl: 9px,
+                    lg: 8px,
+                    md: 7px,
+                    sm: 6px,
+                    xs: 5px));
+              }
+
+              @media screen and (max-width: 576px) {
+                display: none;
+              }
+            }
+
+            >img {
+              width: 26px;
+              height: 26px;
+              margin-left: 6px;
+
+              @include map-respect(width,
+                (xxl: 23px,
+                  xl: 20px,
+                  lg: 16px,
+                  md: 13px,
+                  sm: 10px,
+                  xs: 7px));
+              @include map-respect(height,
+                (xxl: 23px,
+                  xl: 20px,
+                  lg: 16px,
+                  md: 13px,
+                  sm: 10px,
+                  xs: 7px));
+              @include map-respect(margin-left,
+                (xxl:6px,
+                  xl: 5px,
+                  lg: 5px,
+                  md: 4px,
+                  sm: 4px,
+                  xs: 3px));
+            }
           }
         }
       }

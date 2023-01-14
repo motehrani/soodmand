@@ -1,6 +1,30 @@
-import { Dropdown } from 'antd'
+import { FC } from 'react'
+import Image from 'next/image'
 
+import { Dropdown } from 'antd'
 import type { MenuProps } from 'antd'
+
+export interface QuickAccessProps {
+  title: string
+  description: string
+  image: string
+}
+
+export const QuickAccess: FC<QuickAccessProps> = ({
+  title,
+  description,
+  image,
+}) => {
+  return (
+    <div className="quick-access">
+      <div>
+        <h2 className="title">{title}</h2>
+        <h2 className="description">{description}</h2>
+      </div>
+      <Image src={image} alt="logo" width={35} height={35}></Image>
+    </div>
+  )
+}
 
 export const items: MenuProps['items'] = [
   {
@@ -52,9 +76,9 @@ export const items: MenuProps['items'] = [
 export const Cat: React.FC = () => (
   <Dropdown menu={{ items }} placement="bottomRight">
     <a onClick={e => e.preventDefault()} className="dropdown">
-      <span className="material-icons">expand_more</span>
-      دسته بندی
       <span className="material-icons">list</span>
+      دسته بندی
+      <span className="material-icons">expand_more</span>
     </a>
   </Dropdown>
 )
