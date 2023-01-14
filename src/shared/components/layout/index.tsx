@@ -1,7 +1,7 @@
 import { Container } from 'reactstrap'
 import { Footer } from '../footer'
-import { Nav } from '../nav'
-import { SearchBar } from '../search-bar'
+import { SoodmandSearch } from '../soodmand-search'
+import { NavBar } from '../navbar'
 
 export interface LayoutProps {
   children: React.ReactNode
@@ -10,8 +10,8 @@ export interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="page-layout">
-      <Nav />
-      <SearchBar />
+      <SoodmandSearch />
+      <NavBar />
       <div className="page-content">
         <Container>{children}</Container>
       </div>

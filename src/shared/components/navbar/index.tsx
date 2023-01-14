@@ -4,9 +4,9 @@ import { Row, Col, Container } from 'reactstrap'
 import { QuickAccess } from './components'
 import { Cat } from './components'
 
-export const SearchBar = () => {
+export const NavBar = () => {
   return (
-    <div className="search-bar">
+    <div className="nav-bar">
       <Container>
         <Row>
           <Col className="column" xxl="3" xl="3" lg="3" md="3" sm="3" xs="3">

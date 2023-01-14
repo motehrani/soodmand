@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Container, Row, Col } from 'reactstrap'
 
-export const Nav = () => {
+export const SoodmandSearch = () => {
   return (
-    <div className="nav-bar">
+    <div className="search-bar">
       <Container>
         <Row>
           <Col xxl="10" xl="10" lg="10" md="10" sm="10" xs="10">
