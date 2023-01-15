@@ -17,11 +17,11 @@ export const QuickAccess: FC<QuickAccessProps> = ({
 }) => {
   return (
     <div className="quick-access">
+      <Image src={image} alt="logo" width={35} height={35}></Image>
       <div>
         <h2 className="title">{title}</h2>
         <h2 className="description">{description}</h2>
       </div>
-      <Image src={image} alt="logo" width={35} height={35}></Image>
     </div>
   )
 }
@@ -76,8 +76,10 @@ export const items: MenuProps['items'] = [
 export const Cat: React.FC = () => (
   <Dropdown menu={{ items }} placement="bottomRight">
     <a onClick={e => e.preventDefault()} className="dropdown">
-      <span className="material-icons">list</span>
-      دسته بندی
+      <div className="list">
+        <span className="material-icons">list</span>
+        دسته بندی
+      </div>
       <span className="material-icons">expand_more</span>
     </a>
   </Dropdown>

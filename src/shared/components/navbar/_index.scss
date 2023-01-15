@@ -13,13 +13,9 @@ $soodColor2: #9880FA;
       padding: 0;
 
       >div {
+        padding: 0;
 
         // col
-        >div {
-          display: flex;
-          align-items: center;
-        }
-
         h2 {
           font-size: 12px;
           padding-right: 7px;
@@ -27,28 +23,62 @@ $soodColor2: #9880FA;
         }
 
         >.grouping {
+          display: flex;
+          align-items: center;
+          height: 100%;
 
-          span {
-            padding: 0 25px;
-          }
-
-          >.dropdown {
+          a {
             display: flex;
             align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+
+            @include map-respect(font-size,
+              (xxl: 11px,
+                xl: 10px,
+                lg: 10px,
+                md: 9px,
+                sm: 9px,
+                xs: 8px));
+
+            >.list {
+              display: flex;
+              align-items: center;
+            }
+
+            span {
+              padding-right: 25px;
+              font-size: 16px;
+              font-weight: bold;
+              @include map-respect(font-size,
+                (xxl: 15px,
+                  xl: 14px,
+                  lg: 13px,
+                  md: 12px,
+                  sm: 11px,
+                  xs: 10px));
+              @include map-respect(padding-right,
+                (xxl: 22px,
+                  xl: 19px,
+                  lg: 16px,
+                  md: 13px,
+                  sm: 10px,
+                  xs: 10px));
+            }
 
             >.ant-space {
               display: flex;
               align-items: center;
 
             }
-
-            text-decoration: none;
-            color: black;
           }
         }
 
         >.navigators {
           display: flex;
+          align-items: center;
           justify-content: center;
 
           >.catagories {
@@ -65,6 +95,7 @@ $soodColor2: #9880FA;
                 border-radius: 6px;
                 color: black;
                 font-size: 12px;
+                font-weight: bold;
 
                 @include map-respect(padding,
                   (xxl: 9px 18px,
@@ -77,10 +108,10 @@ $soodColor2: #9880FA;
                 @include map-respect(font-size,
                   (xxl: 11px,
                     xl: 10px,
-                    lg: 9px,
-                    md: 8px,
-                    sm: 7px,
-                    xs: 6px));
+                    lg: 10px,
+                    md: 9px,
+                    sm: 8px,
+                    xs: 7px));
 
                 &:hover {
                   background: #a58fff;
@@ -91,18 +122,14 @@ $soodColor2: #9880FA;
         }
 
         >.quick {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          margin-left: 20px;
+
           >.quick-access {
             display: flex;
             align-items: center;
-            margin-right: 40px;
-
-            @include map-respect(margin-right,
-              (xxl: 35px,
-                xl: 30px,
-                lg: 25px,
-                md: 20px,
-                sm: 15px,
-                xs: 10px));
 
             >div {
               display: flex;
@@ -112,6 +139,7 @@ $soodColor2: #9880FA;
                 margin: 0;
                 text-align: right;
                 font-size: 10px;
+                font-weight: bold;
 
                 @include map-respect(font-size,
                   (xxl: 10px,
