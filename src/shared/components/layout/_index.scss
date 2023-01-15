@@ -1,7 +1,14 @@
 .page-layout {
   >.page-content {
     min-height: 100vh;
-    padding-top: 80px;
+    margin-top: 96px;
+    @include map-respect(margin-top,
+      (xxl: 91px,
+        xl: 83px,
+        lg: 78px,
+        md: 72px,
+        sm: 66px,
+        xs: 65px));
   }
 
   >.sood-nav {

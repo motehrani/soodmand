@@ -16,12 +16,6 @@ $soodColor2: #9880FA;
         padding: 0;
 
         // col
-        h2 {
-          font-size: 12px;
-          padding-right: 7px;
-          margin: 0;
-        }
-
         >.grouping {
           display: flex;
           align-items: center;
@@ -140,6 +134,7 @@ $soodColor2: #9880FA;
                 text-align: right;
                 font-size: 10px;
                 font-weight: bold;
+                padding-right: 7px;
 
                 @include map-respect(font-size,
                   (xxl: 10px,
@@ -148,6 +143,13 @@ $soodColor2: #9880FA;
                     md: 7px,
                     sm: 6px,
                     xs: 5px));
+                @include map-respect(padding-right,
+                  (xxl: 7px,
+                    xl: 6px,
+                    lg: 6px,
+                    md: 5px,
+                    sm: 5px,
+                    xs: 4px));
               }
 
               @media screen and (max-width: 576px) {
