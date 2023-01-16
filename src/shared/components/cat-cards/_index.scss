@@ -1,38 +1,47 @@
+$soodColor: rgb(117, 86, 252);
+$soodColor2: rgb(152, 128, 250);
+$soodColor3: #fffbf4;
+
 .cat-cards {
   display: flex;
   justify-content: center;
   width: 100%;
 
-}
-
-.cat-card {
   >div {
-    direction: rtl;
-    max-width: 1366px;
-    border: 1px solid rgb(255, 218, 71);
+    // Row
 
-    .title {
-      font-size: 14px;
+    .cat-card {
+      // Col
+
+      >div {
+        border: 2px solid rgb(152, 128, 250);
+        box-shadow: 10px 10px 5px grey;
+        margin: 0px 5px 20px 5px;
+
+        .title {
+          font-size: 14px;
+        }
+
+        h2,
+        span {
+          font-size: 12px;
+          margin: 0;
+          padding: 5px 10px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
-    h2,
-    span {
-      font-size: 12px;
-      margin: 0;
-      padding: 5px 10px;
+    .existence {
+      display: flex;
+      justify-content: space-between;
+
+      >div {
+        display: flex;
+      }
     }
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.existence {
-  display: flex;
-  justify-content: space-between;
-
-  >div {
-    display: flex;
   }
 }
