@@ -13,7 +13,7 @@ export interface FacilityProps {
 
 export const Facility: FC<FacilityProps> = ({ title, description, image }) => {
   return (
-    <Col xxl="3" xl="3" lg="3" md="3" sm="3" xs="3">
+    <Col xxl="3" xl="3" lg="3" md="6" sm="6" xs="6">
       <div className="facility">
         <Image src={image} alt="logo" width={35} height={35}></Image>
         <div>
@@ -100,11 +100,12 @@ export const Slider: FC<SliderProps> = ({ slides }) => {
       ))}
 
       <div className="navigation">
-        <i onClick={goToPrevSlide} className="fas fa-chevron-left prev-btn"></i>
-        <i
-          onClick={goToNextSlide}
-          className="fas fa-chevron-right next-btn"
-        ></i>
+        <span onClick={goToPrevSlide} className="material-icons next-btn">
+          arrow_forward_ios
+        </span>
+        <span onClick={goToNextSlide} className="material-icons prev-btn">
+          arrow_back_ios
+        </span>
       </div>
 
       <div className="navigation-visibility">

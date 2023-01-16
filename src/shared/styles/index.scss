@@ -11,11 +11,12 @@
 $bgColor: rgb(15, 12, 8);
 $soodColor: #7556fc;
 $soodColor2: #9880fa;
-$soodColor3: #fffcf4;
+$soodColor3: #fffbf4;
 
 body {
   margin: 0;
   direction: rtl;
+  background: $soodColor3 !important;
 }
 
 *:not(.material-icons) {
