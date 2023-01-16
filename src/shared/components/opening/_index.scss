@@ -1,5 +1,5 @@
-$soodColor: #7556fc;
-$soodColor2: #9880fa;
+$soodColor: rgb(117, 86, 252);
+$soodColor2: rgb(152, 128, 250);
 
 .opening {
   display: flex;
@@ -137,10 +137,12 @@ $soodColor2: #9880fa;
     }
 
     >div {
+
       .facility {
+        background: rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
-        box-shadow: 10px -13px $soodColor2;
+        box-shadow: 5px 7px 5px rgb(152, 128, 250, 0.5);
         margin: 15px 5px;
 
         .title {
