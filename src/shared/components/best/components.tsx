@@ -39,10 +39,7 @@ export const Cards = () => {
   return (
     <Row className="cards-row">
       <div className="cards">
-        <Col xxl="12" xl="12" lg="12" md="12" sm="12" xs="12">
-          <SideCards />
-        </Col>
-        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6">
+        <Col xxl="4" xl="4" lg="6" md="8" sm="12" xs="12">
           <SpecialCard
             title="گل"
             description="دسته گل محمدی"
@@ -53,7 +50,16 @@ export const Cards = () => {
             deadline={10}
           />
         </Col>
-        <Col xxl="6" xl="6" lg="6" md="6" sm="6" xs="6">
+        <Col xxl="2" xl="2 " lg="3" md="4" sm="6" xs="12">
+          <SideCards />
+        </Col>
+        <Col xxl="2" xl="2 " lg="3" md="4" sm="6" xs="12">
+          <SideCards />
+        </Col>
+        <Col xxl="2" xl="2" lg="6" md="4" sm="6" xs="12">
+          <SideCards />
+        </Col>
+        <Col xxl="2" xl="2" lg="6" md="4" sm="6" xs="12">
           <SideCards />
         </Col>
       </div>
@@ -120,20 +126,6 @@ const SideCards = () => {
   return (
     <div className="side-cards">
       <div>
-        <Card
-          title="گل"
-          description="دسته گل محمدی"
-          image="/img/product.jpg"
-          price={100}
-          rates={1.5}
-        />
-        <Card
-          title="گل"
-          description="دسته گل محمدی"
-          image="/img/product.jpg"
-          price={100}
-          rates={1.5}
-        />
         <Card
           title="گل"
           description="دسته گل محمدی"
