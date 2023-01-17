@@ -2,14 +2,14 @@ import { FC } from 'react'
 import Image from 'next/image'
 import { Row, Col } from 'reactstrap'
 
-export interface ProductProps {
+export interface CardProps {
   title: string
   description: string
   image: string
   price: number
   rates: number
 }
-export interface SpecialProductProps {
+export interface SpecialCardProps {
   title: string
   description: string
   image: string
@@ -21,34 +21,32 @@ export interface SpecialProductProps {
 
 export const TitleBar = () => {
   return (
-    <Row>
+    <Row className="title-row">
       <div className="best-title-bar">
         <div>
-          <div className="best-title">
-            <h2>محبوب ترین</h2>
-          </div>
-          <div className="best-cat">
-            <h2>محصولات نقره</h2>
-            <h2>محصولات زنانه</h2>
-          </div>
+          <h2>محبوب ترین</h2>
+        </div>
+        <div>
+          <h2>محصولات نقره</h2>
+          <h2>محصولات زنانه</h2>
         </div>
       </div>
     </Row>
   )
 }
 
-export const Products = () => {
+export const Cards = () => {
   return (
-    <div className="products">
-      <Row>
+    <Row className="cards-row">
+      <div className="cards">
         <Col xxl="4" xl="4" lg="4" md="4" sm="6" xs="6">
-          <div className="side-products">
-            <ProductCards />
-          </div>
+          <SideCards />
+          <hr />
+          <SideCards />
         </Col>
         <Col xxl="4" xl="4" lg="4" md="4" sm="12" xs="12">
-          <div className="special-product">
-            <SpecialProduct
+          <div className="special-card">
+            <SpecialCard
               title="گل"
               description="دسته گل محمدی"
               image="/img/product.jpg"
@@ -60,30 +58,24 @@ export const Products = () => {
           </div>
         </Col>
         <Col xxl="4" xl="4" lg="4" md="4" sm="6" xs="6">
-          <div className="side-products">
-            <ProductCards />
-          </div>
+          <SideCards />
+          <hr />
+          <SideCards />
         </Col>
-      </Row>
-    </div>
+      </div>
+    </Row>
   )
 }
 
-const Product: FC<ProductProps> = ({
-  title,
-  description,
-  image,
-  price,
-  rates,
-}) => {
+const Card: FC<CardProps> = ({ title, description, image, price, rates }) => {
   return (
     <div className="product">
-      <div>
+      <div className="cat-and-name">
         <h2>{title}</h2>
         <h2>{description}</h2>
       </div>
       <Image src={image} alt="logo" width={150} height={110}></Image>
-      <div>
+      <div className="price-and-rates">
         <h2>{price} تومان</h2>
         <h2>{rates} بازخورد </h2>
       </div>
@@ -91,7 +83,7 @@ const Product: FC<ProductProps> = ({
   )
 }
 
-const SpecialProduct: FC<SpecialProductProps> = ({
+const SpecialCard: FC<SpecialCardProps> = ({
   title,
   description,
   image,
@@ -101,7 +93,7 @@ const SpecialProduct: FC<SpecialProductProps> = ({
   deadline,
 }) => {
   return (
-    <div className="special-product">
+    <div className="special-card">
       <div>
         <h2>پیشنهاد ویژه</h2>
         <h2>{discount}</h2>
@@ -128,31 +120,18 @@ const SpecialProduct: FC<SpecialProductProps> = ({
   )
 }
 
-const ProductCards = () => {
+const SideCards = () => {
   return (
-    <div className="product-card">
-      <Product
+    <div className="side-cards">
+      <Card
         title="گل"
         description="دسته گل محمدی"
         image="/img/product.jpg"
         price={100}
         rates={1.5}
       />
-      <Product
-        title="گل"
-        description="دسته گل محمدی"
-        image="/img/product.jpg"
-        price={100}
-        rates={1.5}
-      />
-      <Product
-        title="گل"
-        description="دسته گل محمدی"
-        image="/img/product.jpg"
-        price={100}
-        rates={1.5}
-      />
-      <Product
+      <div className="vl" />
+      <Card
         title="گل"
         description="دسته گل محمدی"
         image="/img/product.jpg"

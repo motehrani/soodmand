@@ -1,8 +1,14 @@
+$soodColor: #7556fc;
+$soodColor2: #9880fa;
+$soodColor3: #fffbf4;
+
 .best {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px 0px;
+  flex-direction: column;
+
 
   h2 {
     font-size: 15px;
@@ -10,66 +16,81 @@
     margin: 0;
   }
 
-  >div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1366px;
-    border: 1px solid rgb(255, 218, 71);
-  }
+  >.title-row {
 
-  .best-title-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    border: 1px solid $soodColor;
 
-    >div {
+    >.best-title-bar {
+      width: 100%;
       display: flex;
       justify-content: space-between;
-      flex-direction: row-reverse;
-      width: 100%;
-      margin-top: 10px;
-      border-bottom: 1px solid rgb(255, 218, 71);
 
-      >.best-cat {
+      >div {
         display: flex;
 
         >h2 {
-          margin-right: 30px;
-        }
+          padding: 15px;
+          border-radius: 10px;
 
+          &:hover {
+            background: rgb(152, 128, 250, 0.5);
+          }
+        }
       }
     }
   }
 
-  .products {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  >.cards-row {
+    border: 1px solid $soodColor;
+    border-top: 0px;
 
+    >.cards {
+      display: flex;
+      width: 100%;
+      justify-content: center;
 
-    >div {
       >div {
-        >div {
+
+        // Col
+        >.side-cards {
           display: flex;
+          align-items: center;
           justify-content: center;
           width: 100%;
           gap: 20px;
+          flex-wrap: wrap;
+
+          >.vl {
+            height: 100%;
+            width: 2px;
+            background: black;
+          }
+
+          >.product {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $soodColor;
+
+            >.cat-and-name {
+              h2 {
+                padding-right: 15px;
+                margin-top: 10px;
+              }
+            }
+
+            img {
+              margin: 10px;
+            }
+
+            >.price-and-rates {
+              h2 {
+                padding-right: 15px;
+                margin-bottom: 10px;
+              }
+            }
+          }
         }
       }
-    }
-
-    .product-card {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-
-    }
-
-    .product {
-      display: flex;
-      flex-direction: column;
-
     }
   }
 }
