@@ -8,12 +8,25 @@ $soodColor3: #fffbf4;
   justify-content: center;
   margin: 20px 0px;
   flex-direction: column;
-
+  @include map-respect(margin,
+    (xxl: 20px 0px,
+      xl: 18px 0px,
+      lg: 16px 0px,
+      md: 14px 0px,
+      sm: 12px 0px,
+      xs: 10px 0px));
 
   h2 {
     font-size: 15px;
     direction: rtl;
     margin: 0;
+    @include map-respect(font-size,
+      (xxl: 15px,
+        xl: 14px,
+        lg: 13px,
+        md: 12px,
+        sm: 11px,
+        xs: 10px));
   }
 
   >.title-row {
@@ -30,6 +43,14 @@ $soodColor3: #fffbf4;
         >h2 {
           padding: 15px;
           border-radius: 10px;
+
+          @include map-respect(padding,
+            (xxl: 15px,
+              xl: 14px,
+              lg: 13px,
+              md: 12px,
+              sm: 11px,
+              xs: 10px));
 
           &:hover {
             background: rgb(152, 128, 250, 0.5);
@@ -59,6 +80,13 @@ $soodColor3: #fffbf4;
             align-items: center;
             justify-content: space-around;
             gap: 20px;
+            @include map-respect(gap,
+              (xxl: 19px,
+                xl: 18px,
+                lg: 17px,
+                md: 16px,
+                sm: 15px,
+                xs: 14px));
             flex-wrap: wrap;
 
             >.product {
@@ -71,17 +99,53 @@ $soodColor3: #fffbf4;
                 h2 {
                   padding-right: 15px;
                   margin-top: 10px;
+                  @include map-respect(padding-right,
+                    (xxl: 15px,
+                      xl: 14px,
+                      lg: 13px,
+                      md: 12px,
+                      sm: 11px,
+                      xs: 10px));
+                  @include map-respect(margin-top,
+                    (xxl: 10px,
+                      xl: 9px,
+                      lg: 9px,
+                      md: 8px,
+                      sm: 8px,
+                      xs: 7px));
+
                 }
               }
 
               img {
                 margin: 10px;
+                @include map-respect(margin,
+                  (xxl: 10px,
+                    xl: 9px,
+                    lg: 9px,
+                    md: 8px,
+                    sm: 8px,
+                    xs: 7px));
               }
 
               >.price-and-rates {
                 h2 {
                   padding-right: 15px;
                   margin-bottom: 10px;
+                  @include map-respect(padding-right,
+                    (xxl: 15px,
+                      xl: 14px,
+                      lg: 13px,
+                      md: 12px,
+                      sm: 11px,
+                      xs: 10px));
+                  @include map-respect(margin-bottom,
+                    (xxl: 10px,
+                      xl: 9px,
+                      lg: 9px,
+                      md: 8px,
+                      sm: 8px,
+                      xs: 7px));
                 }
               }
             }
@@ -97,11 +161,25 @@ $soodColor3: #fffbf4;
           border-top: none;
 
           img {
-            margin: 4px 0px;
+            margin: 5px 0px;
+            @include map-respect(margin,
+              (xxl: 5px 0px,
+                xl: 4px 0px,
+                lg: 4px 0px,
+                md: 3px 0px,
+                sm: 3px 0px,
+                xs: 2px 0px));
           }
 
           h2 {
-            padding: 4px 0px;
+            padding: 5px 0px;
+            @include map-respect(padding,
+              (xxl: 5px 0px,
+                xl: 4px 0px,
+                lg: 4px 0px,
+                md: 3px 0px,
+                sm: 3px 0px,
+                xs: 2px 0px));
           }
         }
       }
