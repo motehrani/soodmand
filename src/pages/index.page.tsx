@@ -2,7 +2,7 @@ import { Opening } from '@src/shared/components/opening'
 import { CatCards } from '@src/shared/components/cat-cards'
 import { Best } from '@src/shared/components/best'
 import { Space } from '@src/shared/components/space'
-import { Space2 } from '@src/shared/components/space2'
+import { Space2 } from '@src/shared/components/space'
 import { TheNews } from '@src/shared/components/latest-news'
 import { Container } from 'reactstrap'
 
