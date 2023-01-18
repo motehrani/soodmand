@@ -3,12 +3,16 @@ import { LatestNews } from './component'
 
 export const TheNews = () => {
   return (
-    <Row>
-      <div className="the-news">
+    <div className="the-news">
+      <Row className="title-row">
+        <h1>آخرین اخبار</h1>
+      </Row>
+      <Row className="news-row">
         <LatestNews />
         <LatestNews />
         <LatestNews />
-      </div>
-    </Row>
+        <LatestNews />
+      </Row>
+    </div>
   )
 }
