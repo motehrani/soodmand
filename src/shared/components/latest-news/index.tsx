@@ -5,7 +5,8 @@ export const TheNews = () => {
   return (
     <div className="the-news">
       <Row className="title-row">
-        <h1>آخرین اخبار</h1>
+        <h2>آخرین اخبار</h2>
+        <hr />
       </Row>
       <Row className="news-row">
         <LatestNews />
