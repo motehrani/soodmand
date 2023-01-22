@@ -16,7 +16,10 @@
     h2 {
       font-size: 17px;
       font-weight: bold;
+    }
 
+    hr {
+      color: var(--opposite-t9);
     }
   }
 
@@ -47,13 +50,14 @@
           button {
             position: absolute;
             margin-left: 0;
-            background: rgba($color: #ffffff, $alpha: 0.7);
+            background: var(--positive-t7);
+            color: var(--opposite-t9);
             font-weight: bolder;
             border: none;
-            box-shadow: 5px 5px 5px grey;
+            box-shadow: 5px 5px 5px var(--opposite-t5);
 
             &:hover {
-              background: rgba($color: #ffffff, $alpha: 0.9)
+              background: var(--positive-t9);
             }
 
             top: 10px;

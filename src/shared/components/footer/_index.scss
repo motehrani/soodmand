@@ -1,6 +1,6 @@
 footer {
-  background: rgb(182, 182, 182);
-  border-top: 1px solid rgb(100, 67, 41);
+  background: var(--positive);
+  border-top: 1px solid var(--main-t7);
   width: 100%;
 }
 
@@ -20,6 +20,7 @@ footer {
       margin: 0;
       font-size: 12px;
       margin-bottom: 5px;
+      color: var(--opposite-t9);
     }
 
     h1 {

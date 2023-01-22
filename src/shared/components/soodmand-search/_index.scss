@@ -1,6 +1,6 @@
 .search-bar {
   background: var(--background);
-  border-bottom: var(--border);
+  border-bottom: 1px solid var(--opposite-t5);
 
   >div {
 
@@ -51,6 +51,7 @@
           >.search-box {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background: var(--input);
             border-radius: 10px;
             height: 100%;
@@ -71,6 +72,7 @@
               height: 100%;
               outline: none;
               direction: rtl;
+              font-size: 12px;
               padding: 0;
               padding-right: 7px;
               background: inherit;
@@ -95,7 +97,7 @@
             >span {
               cursor: pointer;
               padding: 0px 7px;
-              color: var(--span);
+              color: var(--opposite-t5);
               @include map-respect(padding,
                 (xxl: 0px 7px,
                   xl: 0px 6px,
