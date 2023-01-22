@@ -7,16 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-/* Define standard variables and values for website */
-$bgColor: rgb(15, 12, 8);
-$soodColor: #7556fc;
-$soodColor2: #9880fa;
-$soodColor3: #fffbf4;
-
 body {
   margin: 0;
   direction: rtl;
-  background: $soodColor3 !important;
+  background: var(--background) !important;
+
+  h2 {
+    color: var(--text);
+  }
 }
 
 *:not(.material-icons) {
@@ -35,4 +33,32 @@ img {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+// Theme
+:root {
+  /* Your default theme */
+  --background: #fffbf4;
+  --foreground: rgb(15, 12, 8);
+  --main: #9880fa;
+  --hover-main: #a58fff;
+  --border: 1px solid rgba(0, 0, 0, 0.5);
+  --input: rgb(232, 232, 232);
+  --input-color: rgb(66, 66, 66);
+  --hover: rgba(255, 255, 255, 0.2);
+  --span: rgba(0, 0, 0, 0.5);
+  --text: rgba(0, 0, 0, 0.9);
+}
+
+[data-theme='dark'] {
+  --background: rgb(10, 10, 15);
+  --foreground: rgb(232, 232, 232);
+  --main: #7556fc;
+  --hover-main: #653eff;
+  --border: 1px solid rgba(255, 255, 255, 0.5);
+  --input: rgb(66, 66, 66);
+  --input-color: rgb(232, 232, 232);
+  --hover: rgba(0, 0, 0, 0.2);
+  --span: rgba(255, 255, 255, 0.5);
+  --text: rgba(255, 255, 255, 0.9);
 }

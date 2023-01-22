@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Container, Row, Col } from 'reactstrap'
+import { useTheme } from 'next-themes'
 
 export const SoodmandSearch = () => {
+  const { theme, setTheme } = useTheme()
+
   return (
     <div className="search-bar">
       <Container>
@@ -18,6 +21,11 @@ export const SoodmandSearch = () => {
                   height={50}
                 />
               </Link>
+              <div className="theme">
+                <button onClick={() => setTheme('light')}>Light Mode</button>
+                <button onClick={() => setTheme('dark')}>Dark Mode</button>
+                <button onClick={() => setTheme('system')}>System Mode</button>
+              </div>
               <div className="search-box">
                 <span className="material-icons">search</span>
                 <input type="text" name="" placeholder="جستجوی محصولات..." />

@@ -1,10 +1,6 @@
-$soodColor3: #fffcf4;
-
 .search-bar {
-  background: $soodColor3;
-
-  border-bottom: 1px solid #000000;
-
+  background: var(--background);
+  border-bottom: var(--border);
 
   >div {
 
@@ -55,7 +51,7 @@ $soodColor3: #fffcf4;
           >.search-box {
             display: flex;
             justify-content: space-between;
-            background: rgb(232, 232, 232);
+            background: var(--input);
             border-radius: 10px;
             height: 100%;
             overflow: hidden;
@@ -78,20 +74,28 @@ $soodColor3: #fffcf4;
               padding: 0;
               padding-right: 7px;
               background: inherit;
-            }
+              color: var(--input-color);
+              @include map-respect(font-size,
+                (xxl: 11px,
+                  xl: 10px,
+                  lg: 10px,
+                  md: 9px,
+                  sm: 9px,
+                  xs: 8px));
 
-            @include map-respect(padding-right,
-              (xxl: 7px,
-                xl: 6px,
-                lg: 5px,
-                md: 4px,
-                sm: 4px,
-                xs: 3px));
+              @include map-respect(padding-right,
+                (xxl: 7px,
+                  xl: 6px,
+                  lg: 5px,
+                  md: 4px,
+                  sm: 4px,
+                  xs: 3px));
+            }
 
             >span {
               cursor: pointer;
               padding: 0px 7px;
-              color: rgb(106, 106, 106);
+              color: var(--span);
               @include map-respect(padding,
                 (xxl: 0px 7px,
                   xl: 0px 6px,
@@ -99,10 +103,6 @@ $soodColor3: #fffcf4;
                   md: 0px 4px,
                   sm: 0px 4px,
                   xs: 0px 3px));
-
-              &:hover {
-                background: rgba(0, 0, 0, 0.1);
-              }
             }
           }
         }
