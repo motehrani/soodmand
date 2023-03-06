@@ -1,0 +1,26 @@
+.product {
+  .row-path {}
+
+  .row-product {
+    color: black;
+
+    .col-product-pictures {
+
+      .slider-image {
+        display: flex;
+
+        .arrow {}
+
+        .images {
+          .image {}
+        }
+      }
+    }
+
+    .col-detail-and-buy {
+      .detail-product {}
+
+      .buy-product {}
+    }
+  }
+}

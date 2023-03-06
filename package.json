@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "serve-json": "json-server --watch db.json --port 4000",
     "lint": "next lint",
     "lint:scss": "npx stylelint ./src/**/*.scss",
     "lint:ts": "eslint ./src --ext .ts,.tsx --fix --quiet",

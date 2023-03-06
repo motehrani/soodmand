@@ -85,7 +85,7 @@ const Card: FC<CardProps> = ({ title, description, image, price, rates }) => {
 
 const SpecialCard: FC<SpecialCardProps> = ({
   title,
-  description,
+  description, 
   image,
   price,
   rates,

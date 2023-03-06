@@ -1,0 +1,89 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
+      "id": 4
+    },
+    {
+      "name": "Logan",
+      "alterEgo": "James Howlett",
+      "id": 5
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Phoebe Buffay"
+    },
+    {
+      "id": 2,
+      "name": "Ross Geller"
+    },
+    {
+      "id": 3,
+      "name": "Matthew Perry"
+    },
+    {
+      "id": 4,
+      "name": "Matt LeBlanc"
+    },
+    {
+      "id": 5,
+      "name": "Courtney Cox"
+    },
+    {
+      "id": 6,
+      "name": "Rachel Green"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "yellow"
+    },
+    {
+      "id": 4,
+      "label": "purple"
+    },
+    {
+      "id": 5,
+      "label": "orange"
+    },
+    {
+      "id": 6,
+      "label": "green"
+    },
+    {
+      "id": 7,
+      "label": "white"
+    },
+    {
+      "id": 8,
+      "label": "black"
+    }
+  ]
+}
