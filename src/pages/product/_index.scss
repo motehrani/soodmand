@@ -1,18 +1,45 @@
 .product {
-  .row-path {}
+  .row-path {
+    padding: 10px;
+
+    p {
+      color: var(--opposite-t7);
+    }
+  }
 
   .row-product {
-    color: black;
+    .col-product-intro {
+      >div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--opposite-t05);
+        padding: 10px 0px;
+        margin-bottom: 10px;
+        border-radius: 20px 20px 0px 0px;
+
+        .specification {
+          .name {
+            font-size: 17px;
+          }
+
+          .product-id {
+            font-size: 11px;
+            color: var(--opposite-t6);
+            margin: 10px;
+          }
+        }
+      }
+    }
 
     .col-product-pictures {
 
       .slider-image {
         display: flex;
 
-        .arrow {}
-
         .images {
-          .image {}
+          width: 100%;
+          justify-content: center;
         }
       }
     }

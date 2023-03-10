@@ -1,4 +1,5 @@
 import { Container } from 'reactstrap'
+
 import { Footer } from '../footer'
 import { SoodmandSearch } from '../soodmand-search'
 import { NavBar } from '../navbar'

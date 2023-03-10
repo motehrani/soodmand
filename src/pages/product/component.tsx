@@ -1,31 +1,55 @@
 import Image from 'next/image'
+import React, { Component } from 'react'
+import Slider from 'react-slick'
 
 export const SliderImage = () => {
   return (
     <div className="slider-image">
-      <div className="arrow">
-        <span className="material-icons">arrow_forward_ios</span>
-      </div>
       <div className="images">
-        <ProductImage />
-        <ProductImage />
-      </div>
-      <div className="arrow">
-        <span className="material-icons">arrow_back_ios</span>
+        <ProductImageSlider />
       </div>
     </div>
   )
 }
 
-export const ProductImage = () => {
-  return (
-    <div className="image">
-      <Image
-        alt="other-picture"
-        src="/img/prdct.jpg"
-        width={75}
-        height={75}
-      ></Image>
-    </div>
-  )
+class ProductImageSlider extends Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+    }
+    return (
+      <div>
+        <Slider {...settings}>
+          <div className="image">
+            <Image
+              alt="other-picture"
+              src="/img/prdct.jpg"
+              width={75}
+              height={75}
+            ></Image>
+          </div>
+          <div className="image">
+            <Image
+              alt="other-picture"
+              src="/img/prdct.jpg"
+              width={75}
+              height={75}
+            ></Image>
+          </div>
+          <div className="image">
+            <Image
+              alt="other-picture"
+              src="/img/prdct.jpg"
+              width={75}
+              height={75}
+            ></Image>
+          </div>
+        </Slider>
+      </div>
+    )
+  }
 }

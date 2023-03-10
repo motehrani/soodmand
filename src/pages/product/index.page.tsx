@@ -14,6 +14,30 @@ const Product = () => {
       </Row>
       <Row className="row-product">
         <Col
+          className="col-product-intro"
+          xxl="12"
+          xl="12"
+          lg="12"
+          md="12"
+          sm="12"
+          xs="12"
+        >
+          <div>
+            <div className="specification">
+              <h2 className="name">شیرآلات نقره ای خم دار</h2>
+              <h2 className="product-id">کد محصول B7DFH239</h2>
+            </div>
+            <div className="brand">
+              <Image
+                alt="/product"
+                src="/img/brand/brand-rasan.jpg"
+                width={120}
+                height={120}
+              />
+            </div>
+          </div>
+        </Col>
+        <Col
           className="col-product-pictures"
           xxl="7"
           xl="7"
@@ -22,17 +46,8 @@ const Product = () => {
           sm="7"
           xs="7"
         >
-          <Row className="row-product-picture">
-            <Image
-              alt="/product"
-              src="/img/prdct.jpg"
-              width={400}
-              height={400}
-            />
-          </Row>
-          <Row className="row-slider-product-picture">
-            <SliderImage />
-          </Row>
+          <Image alt="/product" src="/img/prdct.jpg" width={400} height={400} />
+          <SliderImage />
         </Col>
         <Col
           className="col-detail-and-buy"
@@ -43,22 +58,44 @@ const Product = () => {
           sm="5"
           xs="5"
         >
-          <Row className="row-detail-product">
-            <h2>مشخصات کالا</h2>
-            <div className="size">
-              <h2>ابعاد:</h2>
-              <h2>200 * 75</h2>
+          <div className="detail-product">
+            <div>
+              <h2>مشخصات کالا</h2>
+              <div className="size">
+                <h2>ابعاد:</h2>
+                <h2>200 * 75</h2>
+              </div>
+              <div className="color">
+                <h2>رنگ بندی:</h2>
+                <h2>2 رنگ</h2>
+              </div>
+              <div className="material">
+                <h2>جنس:</h2>
+                <h2>استیل</h2>
+              </div>
             </div>
-            <div className="color">
-              <h2>رنگ بندی:</h2>
-              <h2>2 رنگ</h2>
+            <div className="any-question">
+              <div>
+                <h2>سوالی دارید</h2>
+                <p>منتظر صدای گرم شما هستیم</p>
+              </div>
+              <div>
+                <div>
+                  <div className="phone">
+                    <span className="material-icons">phone</span>
+                    <h2>05136059192</h2>
+                  </div>
+                  <div className="support-agent">
+                    <span className="material-icons">support_agent</span>
+                    <h2>ارتباط با پشتیبانی</h2>
+                  </div>
+                </div>
+                <div></div>
+              </div>
             </div>
-            <div className="material">
-              <h2>جنس:</h2>
-              <h2>استیل</h2>
-            </div>
-          </Row>
-          <Row className="row-buy-product">
+          </div>
+
+          <div className="buy-product">
             <div className="price">
               <h2>420,000</h2>
               <h2>تومان</h2>
@@ -68,7 +105,7 @@ const Product = () => {
               <div className="to-basket"></div>
               <div className="fav-share"></div>
             </div>
-          </Row>
+          </div>
         </Col>
       </Row>
     </div>

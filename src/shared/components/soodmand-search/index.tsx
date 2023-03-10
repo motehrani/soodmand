@@ -24,7 +24,6 @@ export const SoodmandSearch = () => {
               <div className="theme">
                 <button onClick={() => setTheme('light')}>Light Mode</button>
                 <button onClick={() => setTheme('dark')}>Dark Mode</button>
-                <button onClick={() => setTheme('system')}>System Mode</button>
               </div>
               <div className="search-box">
                 <span className="material-icons">search</span>
