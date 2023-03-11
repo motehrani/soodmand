@@ -53,6 +53,7 @@
         justify-content: space-between;
         background: var(--opposite-t05);
         padding: 10px;
+        margin-bottom: 10px;
 
         .detail {
           .detail-title {
@@ -140,7 +141,150 @@
         }
       }
 
-      .buy-product {}
+      .buy-product {
+        background: var(--opposite-t05);
+
+        >.price {
+          display: flex;
+
+          h2 {
+            color: rgba(174, 0, 255, 0.8);
+            padding: 15px 15px 0px 0px;
+          }
+        }
+
+        >.add-to-buy-basket {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0px;
+
+          >div {
+            display: flex;
+            align-items: center;
+          }
+
+          >.increase {
+            display: flex;
+            justify-content: center;
+            background: var(--opposite-t1);
+            border-radius: 15px;
+            width: 25%;
+
+
+            >.number {
+              padding: 0px 10px;
+              font-size: 20px;
+              color: var(--opposite);
+            }
+
+            >.crease {
+              padding: 3px 11px;
+              border-radius: 10px;
+              font-size: 20px;
+              font-weight: bolder;
+              color: var(--opposite);
+              background: var(--positive);
+            }
+          }
+
+          >.to-basket {
+            display: flex;
+            justify-content: space-between;
+            background: var(--main);
+            width: 60%;
+            border-radius: 20px;
+
+            >.material-icons {
+              width: 13%;
+              font-size: 30px;
+              color: white;
+            }
+
+            >div {
+              width: 87%;
+              padding: 10px 0;
+
+              >h2 {
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                color: white;
+              }
+            }
+          }
+
+          >.fav-share {
+            width: 10%;
+
+            >.material-icons {
+              font-size: 30px;
+              color: var(--opposite-t7);
+            }
+          }
+        }
+
+        >.number-of-box-and-price {
+          padding: 10px 0;
+
+          >div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+            >div {
+              >h2 {
+                font-size: 20px;
+              }
+
+              >.description {
+                font-size: 24px;
+                font-weight: bolder;
+              }
+            }
+
+            >.price-of-number,
+            .price-of-box {
+              >h2 {
+                color: rgba(174, 0, 255, 0.8);
+              }
+            }
+          }
+
+          >h2 {
+            font-size: 20px;
+            padding: 20px;
+          }
+        }
+
+        >.line {
+          width: 90%;
+          height: 2px;
+          background: var(--opposite-t2);
+          margin: 0 5%;
+        }
+
+        >.facilities {
+          display: flex;
+          justify-content: space-around;
+          padding: 20px 0;
+
+          >div {
+            display: flex;
+            align-items: center;
+            width: 22%;
+
+            >span {
+              font-size: 40px;
+              color: rgba(174, 0, 255, 0.8);
+            }
+
+            >h2 {
+              font-size: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
     }
   }
 }

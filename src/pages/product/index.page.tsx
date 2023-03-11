@@ -1,10 +1,29 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 import { Row, Col } from 'reactstrap'
 
 import { SliderImage } from './component'
 
 const Product = () => {
+  const [num, setNum] = useState(1)
+  const maxNum = 20
+  const handleCrease = (InOrDe: string) => {
+    if (InOrDe === 'In') {
+      if (num === maxNum) {
+        setNum(1)
+      } else {
+        setNum(num + 1)
+      }
+    }
+    if (InOrDe === 'de') {
+      if (num === 1) {
+        setNum(20)
+      }
+    } else {
+      setNum(num - 1)
+    }
+  }
   return (
     <div className="product">
       <Row className="row-path">
@@ -98,10 +117,59 @@ const Product = () => {
               <h2>420,000</h2>
               <h2>تومان</h2>
             </div>
-            <div className="number">
-              <div className="increase">{/* i was here */}</div>
-              <div className="to-basket"></div>
-              <div className="fav-share"></div>
+            <div className="add-to-buy-basket">
+              <div className="increase">
+                <button className="crease">+</button>
+                <h2 className="number">{num}</h2>
+                <button className="crease">-</button>
+              </div>
+              <div className="to-basket">
+                <span className="material-icons">add_shopping_cart</span>
+                <div>
+                  <h2>افزودن به سبد</h2>
+                  <h2>خرید</h2>
+                </div>
+              </div>
+              <div className="fav-share">
+                <span className="material-icons">favorite_border</span>
+                <span className="material-icons">share</span>
+              </div>
+            </div>
+            <div className="number-of-box-and-price">
+              <div>
+                <div className="number-of-box">
+                  <h2 className="title">تعداد هر جین:</h2>
+                  <h2 className="description">6 عدد</h2>
+                </div>
+                <div className="price-of-number">
+                  <h2 className="title">قیمت هر عدد:</h2>
+                  <h2 className="description">70.000 تومان</h2>
+                </div>
+                <div className="price-of-box">
+                  <h2 className="title">قیمت یک جین:</h2>
+                  <h2 className="description">420.000 تومان</h2>
+                </div>
+              </div>
+              <h2>حداقل مبلغ سبد خرید برای ثبت سفارش 500 هزار تومان می باشد</h2>
+            </div>
+            <div className="line"></div>
+            <div className="facilities">
+              <div>
+                <span className="material-icons">contact_phone</span>
+                <h2>پشتیبانی و مشاوره آنلاین</h2>
+              </div>
+              <div>
+                <span className="material-icons">local_shipping</span>
+                <h2>ارسال سربع</h2>
+              </div>
+              <div>
+                <span className="material-icons">price_check</span>
+                <h2>قیمت مناسب</h2>
+              </div>
+              <div>
+                <span className="material-icons">verified</span>
+                <h2>همکاری با برند های معروف</h2>
+              </div>
             </div>
           </div>
         </Col>
