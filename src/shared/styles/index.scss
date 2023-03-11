@@ -14,16 +14,14 @@ body {
   direction: rtl;
   background: var(--background) !important;
 
-  h2 {
-    color: var(--opposite-t9);
-  }
-
   h1,
   h2,
   h3,
-  p {
+  p,
+  span {
     margin: 0;
     padding: 0;
+    color: var(--opposite-t9);
   }
 }
 

@@ -39,18 +39,6 @@ const Product = () => {
         </Col>
         <Col
           className="col-product-pictures"
-          xxl="7"
-          xl="7"
-          lg="7"
-          md="7"
-          sm="7"
-          xs="7"
-        >
-          <Image alt="/product" src="/img/prdct.jpg" width={400} height={400} />
-          <SliderImage />
-        </Col>
-        <Col
-          className="col-detail-and-buy"
           xxl="5"
           xl="5"
           lg="5"
@@ -58,39 +46,49 @@ const Product = () => {
           sm="5"
           xs="5"
         >
+          <Image alt="/product" src="/img/prdct.jpg" width={400} height={400} />
+          <SliderImage />
+        </Col>
+        <Col
+          className="col-detail-and-buy"
+          xxl="7"
+          xl="7"
+          lg="7"
+          md="7"
+          sm="7"
+          xs="7"
+        >
           <div className="detail-product">
-            <div>
-              <h2>مشخصات کالا</h2>
-              <div className="size">
-                <h2>ابعاد:</h2>
-                <h2>200 * 75</h2>
+            <div className="detail">
+              <h2 className="detail-title">مشخصات کالا</h2>
+              <div>
+                <h2 className="title">ابعاد:</h2>
+                <h2 className="value">200 * 75</h2>
               </div>
-              <div className="color">
-                <h2>رنگ بندی:</h2>
-                <h2>2 رنگ</h2>
+              <div>
+                <h2 className="title">رنگ بندی:</h2>
+                <h2 className="value">2 رنگ</h2>
               </div>
-              <div className="material">
-                <h2>جنس:</h2>
-                <h2>استیل</h2>
+              <div>
+                <h2 className="title">جنس:</h2>
+                <h2 className="value">استیل</h2>
               </div>
             </div>
             <div className="any-question">
-              <div>
-                <h2>سوالی دارید</h2>
+              <div className="ask-us">
+                <h2>سوالی دارید؟</h2>
                 <p>منتظر صدای گرم شما هستیم</p>
               </div>
-              <div>
-                <div>
-                  <div className="phone">
-                    <span className="material-icons">phone</span>
-                    <h2>05136059192</h2>
-                  </div>
-                  <div className="support-agent">
-                    <span className="material-icons">support_agent</span>
-                    <h2>ارتباط با پشتیبانی</h2>
-                  </div>
+
+              <div className="contact">
+                <div className="phone">
+                  <span className="material-icons">phone</span>
+                  <h2>05136059192</h2>
                 </div>
-                <div></div>
+                <div className="support-agent">
+                  <span className="material-icons">support_agent</span>
+                  <h2>ارتباط با پشتیبانی</h2>
+                </div>
               </div>
             </div>
           </div>

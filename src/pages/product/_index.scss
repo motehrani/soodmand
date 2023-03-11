@@ -33,6 +33,9 @@
     }
 
     .col-product-pictures {
+      >img {
+        width: 100%;
+      }
 
       .slider-image {
         display: flex;
@@ -45,7 +48,97 @@
     }
 
     .col-detail-and-buy {
-      .detail-product {}
+      .detail-product {
+        display: flex;
+        justify-content: space-between;
+        background: var(--opposite-t05);
+        padding: 10px;
+
+        .detail {
+          .detail-title {
+            font-size: 15px;
+            font-weight: bolder;
+            margin: 9px 0px;
+          }
+
+          >div {
+            display: flex;
+            justify-content: space-between;
+
+            >h2 {
+              font-size: 12px;
+              margin: 2px;
+            }
+
+            >.value {
+              color: var(--opposite-t6);
+            }
+          }
+        }
+
+        .any-question {
+          background: rgba(0, 136, 255, 0.2);
+
+          padding: 20px;
+          border-radius: 15px;
+          border: var(--opposite-t7) dotted;
+
+          h2 {
+            font-size: 12px;
+          }
+
+          >.ask-us {
+            display: flex;
+            align-items: center;
+
+            >h2 {
+              font-size: 13px;
+              font-weight: bolder;
+            }
+
+            >p {
+              font-size: 11px;
+              margin: 5px;
+              color: var(--opposite-t6);
+            }
+          }
+
+          >.contact {
+            display: flex;
+
+            >div {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              margin: 5px;
+              border-radius: 15px;
+
+              h2 {
+                margin-right: 5px;
+                font-size: 11px;
+              }
+            }
+
+            >.phone {
+              background: green;
+
+              >h2,
+              span {
+                color: white;
+              }
+            }
+
+            >.support-agent {
+              background: yellow;
+
+              >h2,
+              span {
+                color: black;
+              }
+            }
+          }
+        }
+      }
 
       .buy-product {}
     }
