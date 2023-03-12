@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import { Row, Col } from 'reactstrap'
 
-import { SliderImage } from './component'
+import RelatedProductSlider, { SliderImage } from './component'
 
 const Product = () => {
   const [num, setNum] = useState(1)
@@ -173,6 +173,11 @@ const Product = () => {
             </div>
           </div>
         </Col>
+      </Row>
+      <Row className="related-product">
+        <div>
+          <RelatedProductSlider />
+        </div>
       </Row>
     </div>
   )
