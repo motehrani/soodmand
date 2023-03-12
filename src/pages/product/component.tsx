@@ -63,11 +63,10 @@ export default class RelatedProductsSlider extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 6,
+      slidesToScroll: 5,
     }
     return (
       <div>
-        <h2> Multiple items </h2>
         <Slider {...settings}>
           <div>
             <RelatedProductCard

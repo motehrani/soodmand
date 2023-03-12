@@ -174,9 +174,20 @@ const Product = () => {
           </div>
         </Col>
       </Row>
-      <Row className="related-product">
+      <Row className="row-related">
         <div>
           <RelatedProductSlider />
+        </div>
+      </Row>
+      <Row className="row-comment">
+        <div className="comment">
+          <h2>اسم محصول به همراه کد</h2>
+          <div className="description">
+            <h2>نظر خود را بنویسید</h2>
+            <h2>دیدگاه شما:</h2>
+            <textarea placeholder="..." />
+            <button className="register">ثبت نظر</button>
+          </div>
         </div>
       </Row>
     </div>

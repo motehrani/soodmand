@@ -287,4 +287,49 @@
       }
     }
   }
+
+  .row-related {
+    margin: 20px 15px;
+  }
+
+  .row-comment {
+
+    >.comment {
+      width: 100%;
+      border-radius: 15px;
+      margin: 10px 0;
+      background: rgba(0, 0, 255, 0.15);
+
+      >h2 {
+        font-size: 20px;
+        padding: 20px 5px;
+      }
+
+      >.description {
+        width: 98%;
+        margin: 1%;
+        border-radius: 5px;
+        background: var(--positive);
+
+        >h2 {
+          font-size: 15px;
+          padding: 15px 5px;
+        }
+
+        >textarea {
+          width: 98%;
+          margin: 1%;
+          height: 150px;
+          display: block;
+          background: rgba(0, 0, 255, 0.15);
+          display: flex;
+          direction: rtl;
+        }
+
+        >.register {
+          margin: 5px 8px 10px 0;
+        }
+      }
+    }
+  }
 }
