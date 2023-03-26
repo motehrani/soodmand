@@ -1,11 +1,24 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container, Row, Col } from 'reactstrap'
 import { useTheme } from 'next-themes'
+
+import { Container, Row, Col } from 'reactstrap'
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 
 export const SoodmandSearch = () => {
   const { theme, setTheme } = useTheme()
 
+  const [isDarkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = (checked: boolean) => {
+    setDarkMode(checked)
+    if (checked === false) {
+      setTheme('light')
+    } else {
+      setTheme('dark')
+    }
+  }
   return (
     <div className="search-bar">
       <Container>
@@ -22,8 +35,12 @@ export const SoodmandSearch = () => {
                 />
               </Link>
               <div className="theme">
-                <button onClick={() => setTheme('light')}>Light Mode</button>
-                <button onClick={() => setTheme('dark')}>Dark Mode</button>
+                <DarkModeSwitch
+                  style={{ marginBottom: '2rem' }}
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                  size={40}
+                />
               </div>
               <div className="search-box">
                 <span className="material-icons">search</span>

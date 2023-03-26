@@ -48,6 +48,16 @@
             }
           }
 
+          >.theme {
+            display: flex;
+            align-items: center;
+
+            >svg {
+              margin-bottom: 0 !important;
+              margin-right: 10px;
+            }
+          }
+
           >.search-box {
             display: flex;
             justify-content: space-between;
