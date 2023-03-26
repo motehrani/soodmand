@@ -31,51 +31,43 @@ const Product = () => {
           <p>سودمند/شبرآلات/شیرآشپزخونه/یه شیر خوبی</p>
         </div>
       </Row>
+      <Row className="row-product-intro">
+        <div>
+          <div className="specification">
+            <h2 className="name">شیرآلات نقره ای خم دار</h2>
+            <h2 className="product-id">کد محصول B7DFH239</h2>
+          </div>
+          <div>
+            <Image
+              alt="/product"
+              src="/img/brand/brand-rasan.jpg"
+              width={120}
+              height={120}
+            />
+          </div>
+        </div>
+      </Row>
       <Row className="row-product">
         <Col
-          className="col-product-intro"
-          xxl="12"
-          xl="12"
-          lg="12"
+          className="col-product-pictures"
+          xxl="4"
+          xl="4"
+          lg="4"
           md="12"
           sm="12"
           xs="12"
-        >
-          <div>
-            <div className="specification">
-              <h2 className="name">شیرآلات نقره ای خم دار</h2>
-              <h2 className="product-id">کد محصول B7DFH239</h2>
-            </div>
-            <div className="brand">
-              <Image
-                alt="/product"
-                src="/img/brand/brand-rasan.jpg"
-                width={120}
-                height={120}
-              />
-            </div>
-          </div>
-        </Col>
-        <Col
-          className="col-product-pictures"
-          xxl="5"
-          xl="5"
-          lg="5"
-          md="5"
-          sm="5"
-          xs="5"
         >
           <Image alt="/product" src="/img/prdct.jpg" width={400} height={400} />
           <SliderImage />
         </Col>
         <Col
           className="col-detail-and-buy"
-          xxl="7"
-          xl="7"
-          lg="7"
-          md="7"
-          sm="7"
-          xs="7"
+          xxl="8"
+          xl="8"
+          lg="8"
+          md="12"
+          sm="12"
+          xs="12"
         >
           <div className="detail-product">
             <div className="detail">
@@ -111,7 +103,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-
+          <div className="line"></div>
           <div className="buy-product">
             <div className="price">
               <h2>420,000</h2>

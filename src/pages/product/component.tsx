@@ -21,7 +21,7 @@ class ProductImageSlider extends Component {
       infinite: false,
       speed: 500,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
     }
     return (
       <div>
@@ -30,24 +30,40 @@ class ProductImageSlider extends Component {
             <Image
               alt="other-picture"
               src="/img/prdct.jpg"
-              width={75}
-              height={75}
+              width={150}
+              height={150}
             ></Image>
           </div>
           <div className="image">
             <Image
               alt="other-picture"
               src="/img/prdct.jpg"
-              width={75}
-              height={75}
+              width={150}
+              height={150}
             ></Image>
           </div>
           <div className="image">
             <Image
               alt="other-picture"
               src="/img/prdct.jpg"
-              width={75}
-              height={75}
+              width={150}
+              height={150}
+            ></Image>
+          </div>
+          <div className="image">
+            <Image
+              alt="other-picture"
+              src="/img/prdct.jpg"
+              width={150}
+              height={150}
+            ></Image>
+          </div>
+          <div className="image">
+            <Image
+              alt="other-picture"
+              src="/img/prdct.jpg"
+              width={150}
+              height={150}
             ></Image>
           </div>
         </Slider>
