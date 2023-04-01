@@ -130,7 +130,7 @@ const Product = () => {
             <div className="number-of-box-and-price">
               <div>
                 <div className="number-of-box">
-                  <h2 className="title">تعداد هر جین:</h2>
+                  <h2 className="title">تعداد در هر بسته:</h2>
                   <h2 className="description">6 عدد</h2>
                 </div>
                 <div className="price-of-number">
@@ -138,7 +138,7 @@ const Product = () => {
                   <h2 className="description">70.000 تومان</h2>
                 </div>
                 <div className="price-of-box">
-                  <h2 className="title">قیمت یک جین:</h2>
+                  <h2 className="title">قیمت یک بسته:</h2>
                   <h2 className="description">420.000 تومان</h2>
                 </div>
               </div>
