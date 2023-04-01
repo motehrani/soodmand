@@ -28,23 +28,7 @@ const Product = () => {
     <div className="product">
       <Row className="row-path">
         <div className="path">
-          <p>سودمند/شبرآلات/شیرآشپزخونه/یه شیر خوبی</p>
-        </div>
-      </Row>
-      <Row className="row-product-intro">
-        <div>
-          <div className="specification">
-            <h2 className="name">شیرآلات نقره ای خم دار</h2>
-            <h2 className="product-id">کد محصول B7DFH239</h2>
-          </div>
-          <div>
-            <Image
-              alt="/product"
-              src="/img/brand/brand-rasan.jpg"
-              width={120}
-              height={120}
-            />
-          </div>
+          <p>سودمند / شبرآلات / شیرآشپزخونه / یه شیر خوبی</p>
         </div>
       </Row>
       <Row className="row-product">
@@ -69,6 +53,23 @@ const Product = () => {
           sm="12"
           xs="12"
         >
+          <div className="product-intro">
+            <div>
+              <div className="specification">
+                <h2 className="name">شیرآلات نقره ای خم دار</h2>
+                <h2 className="product-id">کد محصول B7DFH239</h2>
+              </div>
+              <div>
+                <Image
+                  alt="/product"
+                  src="/img/brand/brand-rasan.jpg"
+                  width={120}
+                  height={120}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="line"></div>
           <div className="detail-product">
             <div className="detail">
               <h2 className="detail-title">مشخصات کالا</h2>
@@ -144,24 +145,24 @@ const Product = () => {
               </div>
               <h2>حداقل مبلغ سبد خرید برای ثبت سفارش 500 هزار تومان می باشد</h2>
             </div>
-            <div className="line"></div>
-            <div className="facilities">
-              <div>
-                <span className="material-icons">contact_phone</span>
-                <h2>پشتیبانی و مشاوره آنلاین</h2>
-              </div>
-              <div>
-                <span className="material-icons">local_shipping</span>
-                <h2>ارسال سربع</h2>
-              </div>
-              <div>
-                <span className="material-icons">price_check</span>
-                <h2>قیمت مناسب</h2>
-              </div>
-              <div>
-                <span className="material-icons">verified</span>
-                <h2>همکاری با برند های معروف</h2>
-              </div>
+          </div>
+          <div className="line"></div>
+          <div className="facilities">
+            <div>
+              <span className="material-icons">contact_phone</span>
+              <h2>پشتیبانی و مشاوره آنلاین</h2>
+            </div>
+            <div>
+              <span className="material-icons">local_shipping</span>
+              <h2>ارسال سربع</h2>
+            </div>
+            <div>
+              <span className="material-icons">price_check</span>
+              <h2>قیمت مناسب</h2>
+            </div>
+            <div>
+              <span className="material-icons">verified</span>
+              <h2>همکاری با برند های معروف</h2>
             </div>
           </div>
         </Col>
