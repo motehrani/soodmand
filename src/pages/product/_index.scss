@@ -1,6 +1,14 @@
 .product {
   .row-path {
     padding: 10px;
+    @include map-respect(padding,
+      (xxl: 10px,
+        xl: 9px,
+        lg: 8px,
+        md: 7px,
+        sm: 6px,
+        xs: 5px));
+    padding-top: 0 !important;
 
     p {
       color: var(--opposite-t7);
@@ -89,6 +97,30 @@
         >.images {
           width: 85%;
 
+          .image {
+            display: flex !important;
+            justify-content: center;
+
+            img {
+              width: 150px;
+              @include map-respect(width,
+                (xxl: 140px,
+                  xl: 120px,
+                  lg: 200px,
+                  md: 170px,
+                  sm: 170px,
+                  xs: 170px));
+              height: 150px;
+              @include map-respect(height,
+                (xxl: 140px,
+                  xl: 120px,
+                  lg: 200px,
+                  md: 170px,
+                  sm: 170px,
+                  xs: 170px));
+            }
+          }
+
           >div {
             >.slick-slider {
 
@@ -124,13 +156,19 @@
         display: flex;
         justify-content: space-between;
         padding: 10px;
-        margin-bottom: 10px;
 
         .detail {
           .detail-title {
-            font-size: 15px;
+            font-size: 17px;
             font-weight: bolder;
-            margin: 9px 0px;
+            margin: 12px 0px;
+            @include map-respect(font-size,
+              (xxl: 16px,
+                xl: 15px,
+                lg: 14px,
+                md: 13px,
+                sm: 12px,
+                xs: 11px));
           }
 
           >div {
@@ -138,8 +176,15 @@
             justify-content: space-between;
 
             >h2 {
-              font-size: 12px;
+              font-size: 14px;
               margin: 2px;
+              @include map-respect(font-size,
+                (xxl: 13px,
+                  xl: 12px,
+                  lg: 11px,
+                  md: 10px,
+                  sm: 9px,
+                  xs: 9px));
             }
 
             >.value {
@@ -155,10 +200,6 @@
           border-radius: 15px;
           border: var(--opposite-t7) dotted;
 
-          h2 {
-            font-size: 12px;
-          }
-
           >.ask-us {
             display: flex;
             align-items: center;
@@ -166,12 +207,26 @@
             >h2 {
               font-size: 13px;
               font-weight: bolder;
+              @include map-respect(font-size,
+                (xxl: 12px,
+                  xl: 11px,
+                  lg: 10px,
+                  md: 9px,
+                  sm: 8px,
+                  xs: 7px));
             }
 
             >p {
               font-size: 11px;
               margin: 5px;
               color: var(--opposite-t6);
+              @include map-respect(font-size,
+                (xxl: 11px,
+                  xl: 10px,
+                  lg: 9px,
+                  md: 8px,
+                  sm: 7px,
+                  xs: 6px));
             }
           }
 
@@ -213,10 +268,10 @@
       }
 
       >.line {
-        width: 90%;
+        width: 96%;
         height: 2px;
         background: var(--opposite-t2);
-        margin: 0 5%;
+        margin: 0 2%;
       }
 
       .buy-product {
@@ -227,13 +282,22 @@
           h2 {
             color: rgba(174, 0, 255, 0.8);
             padding: 15px 15px 0px 0px;
+            font-size: 20px;
+            @include map-respect(font-size,
+              (xxl: 18px,
+                xl: 17px,
+                lg: 16px,
+                md: 15px,
+                sm: 14px,
+                xs: 13px));
           }
         }
 
         >.add-to-buy-basket {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           margin: 10px 0px;
+
 
           >div {
             display: flex;
@@ -242,25 +306,40 @@
 
           >.increase {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             background: var(--opposite-t1);
             border-radius: 15px;
-            width: 25%;
-
+            width: 20%;
+            box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.2) inset;
 
             >.number {
-              padding: 0px 10px;
-              font-size: 20px;
               color: var(--opposite);
+              font-size: 20px;
+              @include map-respect(font-size,
+                (xxl: 18px,
+                  xl: 17px,
+                  lg: 16px,
+                  md: 15px,
+                  sm: 14px,
+                  xs: 13px));
             }
 
             >.crease {
-              padding: 3px 11px;
+              width: 30%;
+              height: 50%;
               border-radius: 10px;
-              font-size: 20px;
-              font-weight: bolder;
+              box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.2);
               color: var(--opposite);
-              background: var(--positive);
+              background: var(--positive-t5);
+              font-weight: bolder;
+              font-size: 20px;
+              @include map-respect(font-size,
+                (xxl: 18px,
+                  xl: 17px,
+                  lg: 16px,
+                  md: 15px,
+                  sm: 14px,
+                  xs: 13px));
             }
           }
 
@@ -268,23 +347,45 @@
             display: flex;
             justify-content: space-between;
             background: var(--main);
-            width: 60%;
+            width: 50%;
             border-radius: 20px;
 
             >.material-icons {
               width: 13%;
-              font-size: 30px;
+              font-size: 35px;
+              @include map-respect(font-size,
+                (xxl: px,
+                  xl: 34px,
+                  lg: 32px,
+                  md: 30px,
+                  sm: 28px,
+                  xs: 26px));
               color: white;
             }
 
             >div {
               width: 87%;
               padding: 10px 0;
+              @include map-respect(padding,
+                (xxl: 10px 0,
+                  xl: 9px 0,
+                  lg: 8px 0,
+                  md: 8px 0,
+                  sm: 7px 0,
+                  xs: 7px 0));
 
               >h2 {
                 display: flex;
                 justify-content: center;
-                font-size: 20px;
+                font-size: 25px;
+                @include map-respect(font-size,
+                  (xxl: 24px,
+                    xl: 23px,
+                    lg: 22px,
+                    md: 20px,
+                    sm: 19px,
+                    xs: 18px));
+
                 color: white;
               }
             }
@@ -294,7 +395,14 @@
             width: 10%;
 
             >.material-icons {
-              font-size: 30px;
+              font-size: 35px;
+              @include map-respect(font-size,
+                (xxl: px,
+                  xl: 34px,
+                  lg: 32px,
+                  md: 30px,
+                  sm: 28px,
+                  xs: 26px));
               color: var(--opposite-t7);
             }
           }
@@ -311,10 +419,24 @@
             >div {
               >h2 {
                 font-size: 20px;
+                @include map-respect(font-size,
+                  (xxl: 18px,
+                    xl: 17px,
+                    lg: 16px,
+                    md: 15px,
+                    sm: 14px,
+                    xs: 13px));
               }
 
               >.description {
                 font-size: 24px;
+                @include map-respect(font-size,
+                  (xxl: 22px,
+                    xl: 21px,
+                    lg: 20px,
+                    md: 19px,
+                    sm: 18px,
+                    xs: 17px));
                 font-weight: bolder;
               }
             }
@@ -329,6 +451,13 @@
 
           >h2 {
             font-size: 20px;
+            @include map-respect(font-size,
+              (xxl: 18px,
+                xl: 17px,
+                lg: 16px,
+                md: 15px,
+                sm: 14px,
+                xs: 13px));
             padding: 20px;
           }
         }
@@ -344,20 +473,55 @@
           display: flex;
           justify-content: space-around;
           padding: 20px 0;
+          @include map-respect(font-size,
+            (xxl: 18px 0,
+              xl: 17px 0,
+              lg: 16px 0,
+              md: 15px 0,
+              sm: 14px 0,
+              xs: 13px 0));
 
           >div {
             display: flex;
             align-items: center;
             width: 22%;
+            @include map-respect(width,
+              (xxl: 22%,
+                xl: 23%,
+                lg: 23%,
+                md: 24%,
+                sm: 24%,
+                xs: 25%));
 
             >span {
               font-size: 40px;
+              @include map-respect(font-size,
+                (xxl: 36px,
+                  xl: 32px,
+                  lg: 30px,
+                  md: 30px,
+                  sm: 26px,
+                  xs: 22px));
               color: rgba(174, 0, 255, 0.8);
             }
 
             >h2 {
               font-size: 20px;
+              @include map-respect(font-size,
+                (xxl: 18px,
+                  xl: 17px,
+                  lg: 16px,
+                  md: 15px,
+                  sm: 14px,
+                  xs: 13px));
               margin-right: 5px;
+              @include map-respect(margin-right,
+                (xxl: 5px,
+                  xl: 4px,
+                  lg: 4px,
+                  md: 3px,
+                  sm: 3px,
+                  xs: 2px));
             }
           }
         }
@@ -367,6 +531,10 @@
 
   .row-related {
     margin: 20px 15px;
+
+    >div {
+      >.related-products-card {}
+    }
   }
 
   .row-comment {
