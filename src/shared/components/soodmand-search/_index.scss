@@ -1,3 +1,87 @@
+.modal {
+
+  >.modal-dialog {
+
+    >.modal-content {
+      background: rgba(0, 0, 0, 0);
+      border: 0;
+
+      >.modal-body {
+        margin: 0 70px;
+        border-radius: 25px;
+        padding: 20px 40px;
+        background: var(--background);
+        border: 1px solid var(--opposite-t05);
+
+        >.hdr {
+          display: flex;
+          justify-content: space-between;
+
+          >.logo {
+            >img {
+              width: 100px;
+              height: 50px;
+            }
+          }
+
+          >.back {
+            >img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        >.sign-in {
+          font-size: 22px;
+          font-weight: bolder;
+          margin: 20px 0;
+          color: var(--opposite-t9);
+        }
+
+
+        >.inter {
+          font-size: 13px;
+          font-weight: 300;
+          color: var(--opposite-t6);
+        }
+
+        >.input {
+          >input {
+            display: block;
+            background: var(--opposite-t05);
+            color: var(--opposite-t8);
+            border: none;
+            border-radius: 8px;
+            padding: 3px 20px;
+            margin: 15px 5px;
+            width: 100%;
+            direction: ltr;
+          }
+        }
+
+        >.continue {
+          display: flex;
+          justify-content: center;
+
+          >button {
+            border: 0;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 0 5px;
+            color: var(--opposite-t9);
+            background: var(--main);
+          }
+
+          >.change {
+            background: var(--opposite-t05);
+          }
+        }
+      }
+    }
+  }
+}
+
 .search-bar {
   background: var(--background);
   border-bottom: 1px solid var(--opposite-t5);
@@ -127,6 +211,8 @@
             width: 22px;
             height: 22px;
             margin: 0px 5px;
+            cursor: pointer;
+
             @include map-respect(width,
               (xxl: 20px,
                 xl: 18px,

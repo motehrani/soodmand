@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 
-import { Container, Row, Col } from 'reactstrap'
-import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import { Container, Row, Col, Modal, ModalBody } from 'reactstrap'
 
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
 export const SoodmandSearch = () => {
   const { theme, setTheme } = useTheme()
 
@@ -19,6 +19,25 @@ export const SoodmandSearch = () => {
       setTheme('dark')
     }
   }
+
+  const [modal, setModal] = useState(false)
+  const [modal1, setModal1] = useState(false)
+  const [modal2, setModal2] = useState(false)
+  const [nestedModal, setNestedModal] = useState(false)
+  const [closeAll, setCloseAll] = useState(false)
+  const unmountOnClose = true
+  const toggle = () => setModal(!modal)
+  const toggle1 = () => setModal1(!modal1)
+  const toggle2 = () => setModal2(!modal2)
+  const toggleNested = () => {
+    setNestedModal(!nestedModal)
+    setCloseAll(false)
+  }
+  const toggleAll = () => {
+    setNestedModal(!nestedModal)
+    setCloseAll(true)
+  }
+
   return (
     <div className="search-bar">
       <Container>
@@ -50,9 +69,98 @@ export const SoodmandSearch = () => {
           </Col>
           <Col xxl="2" xl="2" lg="2" md="2" sm="2" xs="2">
             <div className="icon">
-              <Image src="/svg/book.svg" alt="LOGO" width={30} height={30} />
-              <Image src="/svg/heart.svg" alt="LOGO" width={30} height={30} />
-              <Image src="/svg/person.svg" alt="LOGO" width={30} height={30} />
+              <Image
+                src="/svg/book.svg"
+                alt="LOGO"
+                width={30}
+                height={30}
+                onClick={toggle2}
+              />
+              <Modal
+                isOpen={modal2}
+                toggle={toggle2}
+                unmountOnClose={unmountOnClose}
+                centered={false}
+              >
+                <ModalBody>
+                  <button onClick={toggle1}></button>
+                </ModalBody>
+              </Modal>
+              <Image
+                src="/svg/heart.svg"
+                alt="LOGO"
+                width={30}
+                height={30}
+                onClick={toggle1}
+              />
+              <Modal
+                isOpen={modal1}
+                toggle={toggle1}
+                unmountOnClose={unmountOnClose}
+                centered={false}
+              >
+                <ModalBody>
+                  <button onClick={toggle1}></button>
+                </ModalBody>
+              </Modal>
+              <Image
+                src="/svg/person.svg"
+                alt="LOGO"
+                width={30}
+                height={30}
+                onClick={toggle}
+              />
+              <Modal
+                isOpen={modal}
+                toggle={toggle}
+                unmountOnClose={unmountOnClose}
+                centered={false}
+              >
+                <ModalBody>
+                  <div className="hdr">
+                    <div></div>
+                    <div className="logo">
+                      <img src="/svg/logo.svg" alt="" />
+                    </div>
+                    <div className="back">
+                      <img src="/svg/test/arrow/left.svg" alt="" />
+                    </div>
+                  </div>
+                  <h2 className="sign-in">ورود | ثبت نام</h2>
+
+                  <h2 className="inter">
+                    لطفا شماره تلفن یا ایمیل خود وارد کنید
+                  </h2>
+                  <div className="input">
+                    <input type="text" />
+                  </div>
+                  <div className="continue">
+                    <button onClick={toggleNested}>ادامه</button>
+                  </div>
+                  <Modal
+                    isOpen={nestedModal}
+                    toggle={toggleNested}
+                    onClosed={closeAll ? toggle : undefined}
+                    unmountOnClose={unmountOnClose}
+                  >
+                    <ModalBody>
+                      <h2 className="inter">
+                        کد تایید 6 رقمی که به شماره یا ایمیلتان ارسال شده را
+                        وارد کنید.
+                      </h2>
+                      <div className="input">
+                        <input type="text" />
+                      </div>
+                      <div className="continue">
+                        <button onClick={toggleAll}>ادامه</button>
+                        <button className="change" onClick={toggleNested}>
+                          ویرایش شماره یا ایمیل
+                        </button>
+                      </div>
+                    </ModalBody>
+                  </Modal>
+                </ModalBody>
+              </Modal>
             </div>
           </Col>
         </Row>
