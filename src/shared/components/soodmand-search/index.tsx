@@ -3,9 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 
-import { Container, Row, Col, Modal, ModalBody } from 'reactstrap'
+import { Container, Row, Col, Modal, ModalBody, ModalFooter } from 'reactstrap'
 
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import { FavLines, BuyBasket } from './components'
+
 export const SoodmandSearch = () => {
   const { theme, setTheme } = useTheme()
 
@@ -80,11 +82,15 @@ export const SoodmandSearch = () => {
                 isOpen={modal2}
                 toggle={toggle2}
                 unmountOnClose={unmountOnClose}
-                centered={false}
+                className="modal-basket"
               >
                 <ModalBody>
-                  <button onClick={toggle1}></button>
+                  <BuyBasket />
+                  <BuyBasket />
                 </ModalBody>
+                <ModalFooter>
+                  <button>برو به صفحه پرداخت</button>
+                </ModalFooter>
               </Modal>
               <Image
                 src="/svg/heart.svg"
@@ -97,11 +103,16 @@ export const SoodmandSearch = () => {
                 isOpen={modal1}
                 toggle={toggle1}
                 unmountOnClose={unmountOnClose}
-                centered={false}
+                className="modal-fav"
               >
                 <ModalBody>
-                  <button onClick={toggle1}></button>
+                  <FavLines />
+                  <FavLines />
+                  <FavLines />
                 </ModalBody>
+                <ModalFooter>
+                  <button>باز کردن هر کدام از محصولات در صفحه مجزا</button>
+                </ModalFooter>
               </Modal>
               <Image
                 src="/svg/person.svg"
@@ -114,7 +125,7 @@ export const SoodmandSearch = () => {
                 isOpen={modal}
                 toggle={toggle}
                 unmountOnClose={unmountOnClose}
-                centered={false}
+                className="sign"
               >
                 <ModalBody>
                   <div className="hdr">
@@ -142,6 +153,7 @@ export const SoodmandSearch = () => {
                     toggle={toggleNested}
                     onClosed={closeAll ? toggle : undefined}
                     unmountOnClose={unmountOnClose}
+                    className="verification"
                   >
                     <ModalBody>
                       <h2 className="inter">
