@@ -9,6 +9,9 @@
         md: 92px,
         sm: 86px,
         xs: 85px));
+    border-bottom: 1px solid var(--main-t7);
+    border-radius: 0 0 50px 50px;
+    box-shadow: -10rem 10rem var(--positive), 10rem 10rem var(--positive);
   }
 
   >.sood-nav {

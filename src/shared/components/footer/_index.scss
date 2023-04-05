@@ -1,6 +1,5 @@
 footer {
   background: var(--positive);
-  border-top: 1px solid var(--main-t7);
   width: 100%;
 }
 
@@ -11,24 +10,22 @@ footer {
   >.footer {
     display: flex;
     justify-content: space-between;
+    margin: 15px 0;
 
-    h1,
-    h2,
-    li,
-    span {
-      direction: rtl;
-      margin: 0;
-      font-size: 12px;
-      margin-bottom: 5px;
+    li {
       color: var(--opposite-t9);
+      width: 100%;
     }
 
-    h1 {
-      font-size: 14px;
+    h2,
+    span {
+      font-size: 12px;
+      color: var(--opposite-t7);
     }
 
     li {
-      margin: 10px 20px 10px 0px;
+      font-size: 14px;
+      margin-right: 20px;
     }
 
     >div {
@@ -37,8 +34,7 @@ footer {
       >div {
         display: flex;
         flex-direction: column;
-        direction: rtl;
-
+        margin: 0 20px;
       }
 
       >.contact {
@@ -48,11 +44,7 @@ footer {
         }
 
         >.phone {
-          >h1 {
-            direction: ltr;
-          }
-
-          margin-top: 6px;
+          direction: ltr;
         }
       }
 
@@ -60,20 +52,46 @@ footer {
 
         >.sm {
           display: flex;
-          justify-content: center;
+          justify-content: end;
 
           img {
-            margin: 0px 5px;
+            margin: 0px 3px;
           }
         }
       }
 
       >.license {
-        >img {
-          width: 100px;
-          height: 100px;
+        >.license-images {
+          display: flex;
+          justify-content: end;
+
+          >img {
+            width: 60px;
+            height: 60px;
+            margin: 0 5px;
+          }
         }
       }
+    }
+  }
+}
+
+.policy-row {
+  >.line {
+    width: 90%;
+    height: 2px;
+    background: var(--main-t7);
+    margin: 0 5%;
+  }
+
+  >.privacy-policy {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+
+    >h2 {
+      font-size: 11px;
+      color: var(--opposite);
     }
   }
 }
