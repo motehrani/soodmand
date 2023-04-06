@@ -12,14 +12,45 @@
   >.title-row {
     padding: 10px 0px;
     margin-top: 20px;
+    @include map-respect(padding,
+      (xxl: 10px 0,
+        xl: 9px 0,
+        lg: 9px 0,
+        md: 8px 0,
+        sm: 8px 0,
+        xs: 7px 0));
+    @include map-respect(margin-top,
+      (xxl: 20px,
+        xl: 19px,
+        lg: 18px,
+        md: 17px,
+        sm: 16px,
+        xs: 15px));
 
-    h2 {
+    >h2 {
       font-size: 17px;
       font-weight: bold;
+      @include map-respect(font-size,
+        (xxl: 17px,
+          xl: 16px,
+          lg: 16px,
+          md: 15px,
+          sm: 15px,
+          xs: 14px));
     }
 
-    hr {
-      color: var(--opposite-t9);
+    >.line {
+      width: 100%;
+      height: 2px;
+      background: var(--opposite-t5);
+      margin: 10px 0;
+      @include map-respect(margin,
+        (xxl: 10px 0,
+          xl: 9px 0,
+          lg: 8px 0,
+          md: 7px 0,
+          sm: 6px 0,
+          xs: 5px 0));
     }
   }
 
@@ -27,18 +58,30 @@
 
     >.latest-news {
       // col
+      padding: 0 10px;
+      @include map-respect(padding,
+        (xxl: 0 9px,
+          xl: 0 8px,
+          lg: 0 7px,
+          md: 0 6px,
+          sm: 0 5px,
+          xs: 0 4px));
 
-      >.happening {
-
+      >.news {
         width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 25px;
-
-        h2 {
-          font-size: 12px;
-          width: 100%;
-        }
+        padding-bottom: 10px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 0px 5px var(--opposite-t5);
+        @include map-respect(margin-bottom,
+          (xxl: 23px,
+            xl: 20px,
+            lg: 18px,
+            md: 15px,
+            sm: 13px,
+            xs: 10px));
 
         .news-picture {
           width: 100%;
@@ -49,20 +92,47 @@
 
           button {
             position: absolute;
-            margin-left: 0;
-            background: var(--positive-t7);
-            color: var(--opposite-t9);
-            font-weight: bolder;
+            top: 10px;
+            @include map-respect(top,
+              (xxl: 9px,
+                xl: 8px,
+                lg: 7px,
+                md: 6px,
+                sm: 5px,
+                xs: 4px));
+            background: rgb(10, 10, 10);
+            color: rgb(250, 250, 250);
+            border-radius: 5px;
             border: none;
-            box-shadow: 5px 5px 5px var(--opposite-t5);
+            font-size: 12px;
+            @include map-respect(font-size,
+              (xxl: 12px,
+                xl: 11px,
+                lg: 10px,
+                md: 10px,
+                sm: 9px,
+                xs: 9px));
+            font-weight: bolder;
+            margin: 25px;
+            @include map-respect(margin,
+              (xxl: 23px,
+                xl: 20px,
+                lg: 18px,
+                md: 15px,
+                sm: 13px,
+                xs: 10px));
+            padding: 5px;
+            @include map-respect(padding,
+              (xxl: 5px,
+                xl: 4px,
+                lg: 4px,
+                md: 3px,
+                sm: 3px,
+                xs: 2px));
 
             &:hover {
-              background: var(--positive-t9);
+              background: rgb(20, 20, 20);
             }
-
-            top: 10px;
-            margin: 25px;
-            font-size: 16px;
           }
         }
 
@@ -73,11 +143,57 @@
           >div {
             display: flex;
             align-items: center;
+            gap: 5px;
+            @include map-respect(gap,
+              (xxl: 4px,
+                xl: 4px,
+                lg: 3px,
+                md: 3px,
+                sm: 2px,
+                xs: 2px));
+            padding: 0 5px;
 
-            h2 {
+            >h2 {
+              font-size: 11px;
+              @include map-respect(font-size,
+                (xxl: 11px,
+                  xl: 10px,
+                  lg: 9px,
+                  md: 9px,
+                  sm: 8px,
+                  xs: 8px));
               margin: 0;
+              color: var(--opposite-t5);
+            }
+
+            >.via {
+              color: var(--opposite);
+            }
+
+            >span {
+              color: var(--main);
             }
           }
+        }
+
+        >h2 {
+          font-size: 12px;
+          font-weight: bolder;
+          width: 100%;
+          margin: 3px 0;
+          padding: 0 5px;
+          @include map-respect(font-size,
+            (xxl: 12px,
+              xl: 11px,
+              lg: 11px,
+              md: 10px,
+              sm: 10px,
+              xs: 10px));
+        }
+
+        >.description {
+          font-weight: bold;
+          color: var(--opposite-t7);
         }
       }
     }

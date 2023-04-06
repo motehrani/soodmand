@@ -6,7 +6,7 @@ export const TheNews = () => {
     <div className="the-news">
       <Row className="title-row">
         <h2>آخرین اخبار</h2>
-        <hr />
+        <div className="line"></div>
       </Row>
       <Row className="news-row">
         <LatestNews />
