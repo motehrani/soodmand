@@ -46,7 +46,7 @@ img {
 // Theme
 :root {
   /* Your default theme */
-  --background: #ffffff;
+  --background: #f3f3e3;
   --foreground: rgb(15, 12, 8);
   --main: #9880fa;
   --hover-main: #a58fff;
@@ -72,6 +72,10 @@ img {
   --positive-t8: rgba(255, 255, 255, 0.8);
   --positive-t9: rgba(255, 255, 255, 0.9);
   --positive: white;
+  --opposite-t01: rgba(0, 0, 0, 0.01);
+  --opposite-t02: rgba(0, 0, 0, 0.02);
+  --opposite-t03: rgba(0, 0, 0, 0.03);
+  --opposite-t04: rgba(0, 0, 0, 0.04);
   --opposite-t05: rgba(0, 0, 0, 0.05);
   --opposite-t1: rgba(0, 0, 0, 0.1);
   --opposite-t2: rgba(0, 0, 0, 0.2);
@@ -112,6 +116,10 @@ img {
   --positive-t8: rgba(0, 0, 0, 0.8);
   --positive-t9: rgba(0, 0, 0, 0.9);
   --positive: black;
+  --opposite-t01: rgba(255, 255, 255, 0.01);
+  --opposite-t02: rgba(255, 255, 255, 0.02);
+  --opposite-t03: rgba(255, 255, 255, 0.03);
+  --opposite-t04: rgba(255, 255, 255, 0.04);
   --opposite-t05: rgba(255, 255, 255, 0.05);
   --opposite-t1: rgba(255, 255, 255, 0.1);
   --opposite-t2: rgba(255, 255, 255, 0.2);
