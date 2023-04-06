@@ -23,12 +23,7 @@ export const Space2 = () => {
     <Row className="space2">
       <Col xxl="12" xl="12" lg="12" md="12" sm="12" xs="12">
         <div>
-          <Image
-            alt="beauty"
-            src="/img/wide-5120-1440.jpg"
-            width={1272}
-            height={451}
-          />
+          <Image alt="beauty" src="/img/wide.png" width={1272} height={451} />
         </div>
       </Col>
     </Row>
