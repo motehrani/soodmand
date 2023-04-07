@@ -39,7 +39,13 @@ export const Cards = () => {
   return (
     <Row className="cards-row">
       <div className="cards">
-        <Col xxl="4" xl="4" lg="6" md="8" sm="12" xs="12">
+        <Col xxl="2" xl="2 " lg="6" md="6" sm="6" xs="6">
+          <SideCards />
+        </Col>
+        <Col xxl="2" xl="2 " lg="6" md="6" sm="6" xs="6">
+          <SideCards />
+        </Col>
+        <Col xxl="4" xl="4" lg="12" md="12" sm="12" xs="12">
           <SpecialCard
             title="گل"
             description="دسته گل محمدی"
@@ -50,16 +56,10 @@ export const Cards = () => {
             deadline={10}
           />
         </Col>
-        <Col xxl="2" xl="2 " lg="3" md="4" sm="6" xs="12">
+        <Col xxl="2" xl="2" lg="6" md="6" sm="6" xs="6">
           <SideCards />
         </Col>
-        <Col xxl="2" xl="2 " lg="3" md="4" sm="6" xs="12">
-          <SideCards />
-        </Col>
-        <Col xxl="2" xl="2" lg="6" md="4" sm="6" xs="12">
-          <SideCards />
-        </Col>
-        <Col xxl="2" xl="2" lg="6" md="4" sm="6" xs="12">
+        <Col xxl="2" xl="2" lg="6" md="6" sm="6" xs="6">
           <SideCards />
         </Col>
       </div>
@@ -69,7 +69,7 @@ export const Cards = () => {
 
 const Card: FC<CardProps> = ({ title, description, image, price, rates }) => {
   return (
-    <div className="product">
+    <div className="product card">
       <div className="cat-and-name">
         <h2>{title}</h2>
         <h2>{description}</h2>
@@ -85,7 +85,7 @@ const Card: FC<CardProps> = ({ title, description, image, price, rates }) => {
 
 const SpecialCard: FC<SpecialCardProps> = ({
   title,
-  description, 
+  description,
   image,
   price,
   rates,
@@ -93,30 +93,28 @@ const SpecialCard: FC<SpecialCardProps> = ({
   deadline,
 }) => {
   return (
-    <div className="special-card">
-      <div>
-        <div className="title">
-          <h2>پیشنهاد ویژه</h2>
-          <h2>{discount}</h2>
-          <Image src={image} alt="logo" width={350} height={255}></Image>
-        </div>
+    <div className="special-card card">
+      <div className="title">
+        <h2>پیشنهاد ویژه</h2>
+        <h2>{discount}</h2>
+        <Image src={image} alt="logo" width={350} height={255}></Image>
+      </div>
 
-        <div className="cat-and-name">
-          <h2>{title}</h2>
-          <h2>{description}</h2>
-        </div>
+      <div className="cat-and-name">
+        <h2>{title}</h2>
+        <h2>{description}</h2>
+      </div>
 
-        <div className="price-and-rates">
-          {/* <h2>{(100 - discount) * price}</h2> */}
-          <h2>{price} تومان</h2>
-          <h2>{rates} بازخورد </h2>
-        </div>
+      <div className="price-and-rates">
+        {/* <h2>{(100 - discount) * price}</h2> */}
+        <h2>{price} تومان</h2>
+        <h2>{rates} بازخورد </h2>
+      </div>
 
-        <div className="deadline">
-          <h2>عجله کن! پایان پیشنهاد در:</h2>
-          <h2>{deadline} روز دیگر</h2>
-          <h2>تا پایان پیشنهاد باقی می ماند</h2>
-        </div>
+      <div className="deadline">
+        <h2>عجله کن! پایان پیشنهاد در:</h2>
+        <h2>{deadline} روز دیگر</h2>
+        <h2>تا پایان پیشنهاد باقی می ماند</h2>
       </div>
     </div>
   )
