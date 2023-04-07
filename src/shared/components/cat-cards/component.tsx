@@ -22,7 +22,7 @@ const Existence: FC<ExistenceProps> = ({ title, number }) => {
 
 export const CatCard = () => {
   return (
-    <Col className="cat-card" xxl="3" xl="3" lg="6" md="6" sm="12" xs="12">
+    <Col className="cat-card-col" xxl="3" xl="3" lg="3" md="6" sm="6" xs="6">
       <div>
         <Image
           src="/img/cat-cards.jpg"
