@@ -45,8 +45,11 @@ img {
 
 // Theme
 :root {
+  --layer1: rgb(243, 244, 246);
+  --layer2: rgb(255, 255, 255);
+  --layer3: rgb(242, 234, 237);
   /* Your default theme */
-  --background: #f3f3e3;
+  --background: rgb(243, 244, 246);
   --foreground: rgb(15, 12, 8);
   --main: #9880fa;
   --hover-main: #a58fff;
@@ -90,7 +93,10 @@ img {
 }
 
 [data-theme='dark'] {
-  --background: rgb(10, 10, 15);
+  --layer1: #121212;
+  --layer2: #1d1d1d;
+  --layer3: #2c2c2c;
+  --background: #121212;
   --foreground: rgb(232, 232, 232);
   --main: #7556fc;
   --hover-main: #5c33ff;

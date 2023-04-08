@@ -23,7 +23,7 @@
   >.title-row {
 
     >.best-title-bar {
-      background: var(--positive);
+      background: var(--layer2);
       display: flex;
       justify-content: space-between;
       box-shadow: 0px 0px 3px var(--opposite-t4);
@@ -62,7 +62,7 @@
       .card {
         display: flex;
         width: 100%;
-        background: var(--positive);
+        background: var(--layer2);
         box-shadow: 0px 0px 3px var(--opposite-t4);
         position: relative;
         z-index: 1;
@@ -70,9 +70,8 @@
         transition: all 150ms linear;
 
         &:hover {
-          box-shadow: 0px 0px 10px var(--opposite-t6) !important;
+          box-shadow: 0px 0px 10px var(--opposite-t3) !important;
           z-index: 2;
-          transform: scale(1.05);
         }
       }
 
