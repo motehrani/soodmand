@@ -44,7 +44,56 @@
           }
         }
 
-        >.detail {}
+        >.detail {
+          >.name-and-id {
+            display: flex;
+
+            >.name {
+              font-size: 13px;
+              color: var(--opposite-t8);
+            }
+
+            >.id {
+              font-size: 9px;
+              color: var(--opposite-t5);
+            }
+          }
+
+          >.color-size-weight {
+            display: flex;
+            align-items: center;
+
+            >div {
+              display: flex;
+              margin: 5px 0;
+              margin-left: 8%;
+
+              >h2 {
+                margin: 0 2px;
+              }
+
+              >.title {
+                font-size: 12px;
+                color: var(--opposite-t8);
+              }
+
+              >.description {
+                font-size: 11px;
+                color: var(--opposite-t7);
+              }
+            }
+          }
+
+          >.price {
+            display: flex;
+
+            >h2 {
+              font-size: 13px;
+              color: var(--opposite-t7);
+
+            }
+          }
+        }
       }
     }
   }
