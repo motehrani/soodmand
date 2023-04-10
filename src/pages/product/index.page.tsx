@@ -4,26 +4,9 @@ import { useState } from 'react'
 import { Row, Col } from 'reactstrap'
 
 import RelatedProductSlider, { SliderImage } from './component'
+import { Increase } from './component/increase'
 
 const Product = () => {
-  const [num, setNum] = useState(1)
-  const maxNum = 20
-  const handleCrease = (InOrDe: string) => {
-    if (InOrDe === 'In') {
-      if (num === maxNum) {
-        setNum(1)
-      } else {
-        setNum(num + 1)
-      }
-    }
-    if (InOrDe === 'de') {
-      if (num === 1) {
-        setNum(20)
-      }
-    } else {
-      setNum(num - 1)
-    }
-  }
   return (
     <div className="product">
       <Row className="row-path">
@@ -111,11 +94,7 @@ const Product = () => {
               <h2>تومان</h2>
             </div>
             <div className="add-to-buy-basket">
-              <div className="increase">
-                <button className="crease">+</button>
-                <h2 className="number">{num}</h2>
-                <button className="crease">-</button>
-              </div>
+              <Increase />
               <div className="to-basket">
                 <span className="material-icons">add_shopping_cart</span>
                 <div>

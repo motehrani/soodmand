@@ -310,11 +310,9 @@
           >.increase {
             display: flex;
             justify-content: space-around;
-            background: var(--opposite-t05);
+            background: var(--layer3);
             border-radius: 15px;
-            border: 1px solid var(--opposite-t05);
             width: 20%;
-            box-shadow: 4px 3px 1px rgba(0, 0, 0, 0.6) inset;
 
             >.number {
               color: var(--opposite);
@@ -332,9 +330,9 @@
               width: 30%;
               height: 50%;
               border-radius: 10px;
-              box-shadow: 4px 3px 1px rgba(0, 0, 0, 0.6);
+              border: none;
               color: var(--opposite);
-              background: var(--background);
+              background: var(--layer2);
               font-weight: bolder;
               font-size: 20px;
               @include map-respect(font-size,
@@ -344,6 +342,10 @@
                   md: 15px,
                   sm: 14px,
                   xs: 13px));
+
+              &:hover {
+                background: var(--opposite-t2);
+              }
             }
           }
 
@@ -353,7 +355,6 @@
             width: 50%;
             border-radius: 20px;
             background: var(--main);
-            box-shadow: 10px 20px 60px 10px rgb(229, 23, 232) inset;
 
             >.material-icons {
               width: 13%;
