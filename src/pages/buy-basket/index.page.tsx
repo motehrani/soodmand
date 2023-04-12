@@ -1,15 +1,15 @@
 import { Row, Col } from 'reactstrap'
-import { NumberOfProduct } from './components'
+import { ProductInBasket } from './components/product-in-basket'
 
 const BuyBasket = () => {
   return (
     <Row className="buy-basket-row">
       <Col
         className="products-in-basket-col"
-        xxl="8"
-        xl="8"
-        lg="8"
-        md="6"
+        xxl="9"
+        xl="9"
+        lg="9"
+        md="9"
         sm="12"
         xs="12"
       >
@@ -18,19 +18,51 @@ const BuyBasket = () => {
         </div>
         <div className="line"></div>
         <div className="number-of-products">
-          <NumberOfProduct />
-          <NumberOfProduct />
+          <ProductInBasket />
+          <div className="line"></div>
+          <ProductInBasket />
         </div>
       </Col>
       <Col
         className="calculate-price-col"
-        xxl="4"
-        xl="4"
-        lg="4"
-        md="6"
+        xxl="3"
+        xl="3"
+        lg="3"
+        md="3"
         sm="12"
         xs="12"
-      ></Col>
+      >
+        <div className="price-detail">
+          <h2 className="title">قیمت 2 کالا:</h2>
+          <h2 className="description">1.346.400 تومان</h2>
+        </div>
+        <div className="line"></div>
+        <div className="price-detail">
+          <h2 className="title">مبلغ با احتساب تخفیف:</h2>
+          <h2 className="description">1.346.400 تومان</h2>
+        </div>
+        <div className="price-detail">
+          <h2 className="title">هزینه ارسال:</h2>
+          <h2 className="description">رایگان</h2>
+        </div>
+        <div className="price-detail">
+          <h2 className="title">مبلغ قابل پرداخت:</h2>
+          <h2 className="description">1.346.400 تومان</h2>
+        </div>
+        <div className="line"></div>
+        <div className="current-address">
+          <h2 className="title">آدرس فعلی:</h2>
+          <h2 className="description">خراسان رضوی مشهد مشششد</h2>
+        </div>
+        <div className="another-address">
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="slider"></span>
+          </label>
+          <h2>آیا تمایل به تغییر آدرس دارید؟</h2>
+        </div>
+        <button>ادامه فرایند خرید</button>
+      </Col>
     </Row>
   )
 }
