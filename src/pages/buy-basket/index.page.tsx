@@ -17,7 +17,7 @@ const BuyBasket = () => {
         xxl="9"
         xl="9"
         lg="9"
-        md="9"
+        md="12"
         sm="12"
         xs="12"
       >
@@ -36,7 +36,7 @@ const BuyBasket = () => {
         xxl="3"
         xl="3"
         lg="3"
-        md="3"
+        md="12"
         sm="12"
         xs="12"
       >

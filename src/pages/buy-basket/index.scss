@@ -1,5 +1,15 @@
 .buy-basket-row {
   >.products-in-basket-col {
+    margin-bottom: 10px;
+    @include map-respect(padding,
+      (xxl: 10px,
+        xl: 10px,
+        lg: 0,
+        md: 0,
+        sm: 0,
+        xs: 0));
+
+
     >.title {
       >h2 {
         font-size: 15px;
