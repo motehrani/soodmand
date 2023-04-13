@@ -159,6 +159,8 @@
 
   >.calculate-price-col {
     background: var(--layer2);
+    margin-bottom: 30px;
+
 
     >.price-detail {
       display: flex;
@@ -263,6 +265,21 @@
           -ms-transform: translateX(13px);
           transform: translateX(13px);
         }
+      }
+    }
+
+    >.new-address {
+
+      >input,
+      >textarea {
+        background: var(--positive-t7);
+        color: var(--opposite-t7);
+        width: 100%;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 13px;
       }
     }
 

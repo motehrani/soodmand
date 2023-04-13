@@ -1,7 +1,15 @@
+import { useState } from 'react'
+
 import { Row, Col } from 'reactstrap'
+
 import { ProductInBasket } from './components/product-in-basket'
 
 const BuyBasket = () => {
+  const [show, setShow] = useState(false)
+  const showHandler = () => {
+    setShow(!show)
+  }
+
   return (
     <Row className="buy-basket-row">
       <Col
@@ -56,11 +64,18 @@ const BuyBasket = () => {
         </div>
         <div className="another-address">
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" onChange={() => showHandler()} />
             <span className="slider"></span>
           </label>
           <h2>آیا تمایل به تغییر آدرس دارید؟</h2>
         </div>
+        {show && (
+          <div className="new-address">
+            <input type="text" placeholder="استان محل سکونت" />
+            <input type="text" placeholder="شهر" />
+            <textarea placeholder="آدرس دقیق" />
+          </div>
+        )}
         <button>ادامه فرایند خرید</button>
       </Col>
     </Row>
