@@ -15,8 +15,8 @@ const BuyBasket = () => {
       <Col
         className="products-in-basket-col"
         xxl="9"
-        xl="9"
-        lg="9"
+        xl="8"
+        lg="7"
         md="12"
         sm="12"
         xs="12"
@@ -34,8 +34,8 @@ const BuyBasket = () => {
       <Col
         className="calculate-price-col"
         xxl="3"
-        xl="3"
-        lg="3"
+        xl="4"
+        lg="5"
         md="12"
         sm="12"
         xs="12"
