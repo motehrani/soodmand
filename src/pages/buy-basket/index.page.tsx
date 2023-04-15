@@ -27,7 +27,6 @@ const BuyBasket = () => {
         <div className="line"></div>
         <div className="number-of-products">
           <ProductInBasket />
-          <div className="line"></div>
           <ProductInBasket />
         </div>
       </Col>
