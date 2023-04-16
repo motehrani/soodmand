@@ -1,14 +1,14 @@
 .page-layout {
   >.page-content {
     min-height: 100vh;
-    margin-top: 116px;
+    margin-top: 96px;
     @include map-respect(margin-top,
-      (xxl: 111px,
-        xl: 103px,
-        lg: 98px,
-        md: 92px,
-        sm: 86px,
-        xs: 85px));
+      (xxl: 91px,
+        xl: 84px,
+        lg: 79px,
+        md: 72px,
+        sm: 67px,
+        xs: 72px));
     border-bottom: 1px solid var(--main-t7);
     border-radius: 0 0 50px 50px;
     box-shadow: -10rem 10rem var(--positive), 10rem 10rem var(--positive);
