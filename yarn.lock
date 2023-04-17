@@ -2824,6 +2824,11 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
+overlayscrollbars-react@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/overlayscrollbars-react/-/overlayscrollbars-react-0.5.0.tgz#0272bdc6304c7228a58d30e5b678e97fd5c5d8dd"
+  integrity sha512-uCNTnkfWW74veoiEv3kSwoLelKt4e8gTNv65D771X3il0x5g5Yo0fUbro7SpQzR9yNgi23cvB2mQHTTdQH96pA==
+
 p-limit@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"

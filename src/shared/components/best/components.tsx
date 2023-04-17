@@ -2,6 +2,10 @@ import { FC } from 'react'
 import Image from 'next/image'
 import { Row, Col } from 'reactstrap'
 
+import { Space, Typography, Rate } from 'antd'
+
+const { Text, Link } = Typography
+
 export interface CardProps {
   title: string
   description: string
@@ -95,26 +99,34 @@ const SpecialCard: FC<SpecialCardProps> = ({
   return (
     <div className="special-card card">
       <div className="title">
-        <h2>پیشنهاد ویژه</h2>
-        <h2>{discount}</h2>
+        <h2 className="special-offer">پیشنهاد ویژه</h2>
+        <button className="percent">{discount}%</button>
         <Image src={image} alt="logo" width={350} height={255}></Image>
       </div>
 
       <div className="cat-and-name">
-        <h2>{title}</h2>
-        <h2>{description}</h2>
+        <h2 className="cat">{title}</h2>
+        <h2 className="name">{description}</h2>
       </div>
 
       <div className="price-and-rates">
         {/* <h2>{(100 - discount) * price}</h2> */}
-        <h2>{price} تومان</h2>
-        <h2>{rates} بازخورد </h2>
+        <div className="price">
+          <h2 className="price-after-discount">{price} تومان</h2>
+          <Text delete className="price-without-discount">
+            115 تومان
+          </Text>
+        </div>
+        <div className="rate">
+          <Rate allowHalf disabled defaultValue={rates} />
+          <h2>3 بازخورد </h2>
+        </div>
       </div>
 
-      <div className="deadline">
-        <h2>عجله کن! پایان پیشنهاد در:</h2>
-        <h2>{deadline} روز دیگر</h2>
-        <h2>تا پایان پیشنهاد باقی می ماند</h2>
+      <div>
+        <h2 className="deadline">عجله کن! پایان پیشنهاد:</h2>
+        <h2 className="deadline-time">{deadline} روز دیگر</h2>
+        <h2 className="deadline">تا پایان، پیشنهاد باقی می ماند</h2>
       </div>
     </div>
   )
