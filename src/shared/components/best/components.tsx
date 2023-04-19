@@ -75,13 +75,16 @@ const Card: FC<CardProps> = ({ title, description, image, price, rates }) => {
   return (
     <div className="product card">
       <div className="cat-and-name">
-        <h2>{title}</h2>
-        <h2>{description}</h2>
+        <h2 className="cat">{title}</h2>
+        <h2 className="name">{description}</h2>
       </div>
       <Image src={image} alt="logo" width={150} height={110}></Image>
       <div className="price-and-rates">
-        <h2>{price} تومان</h2>
-        <h2>{rates} بازخورد </h2>
+        <h2 className="price">{price} تومان</h2>
+        <div className="rate">
+          <Rate allowHalf disabled defaultValue={rates} />
+          <h2 className="rate">بازخورد(0)</h2>
+        </div>
       </div>
     </div>
   )
@@ -141,14 +144,14 @@ const SideCards = () => {
           description="دسته گل محمدی"
           image="/img/product.jpg"
           price={100}
-          rates={1.5}
+          rates={4}
         />
         <Card
           title="گل"
           description="دسته گل محمدی"
           image="/img/product.jpg"
           price={100}
-          rates={1.5}
+          rates={2.5}
         />
       </div>
     </div>

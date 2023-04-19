@@ -90,6 +90,34 @@
             >.product {
               height: 50%;
 
+              >div {
+                >.cat {
+                  color: var(--opposite-t5);
+                }
+
+                >.rate {
+                  display: flex;
+                  justify-content: end;
+                  align-items: center;
+                  direction: ltr;
+
+                  >h2 {
+                    color: var(--opposite-t5);
+                  }
+
+                  .ant-rate {
+                    font-size: 16px;
+                    @include map-respect(font-size,
+                      (xxl: 14px,
+                        xl: 16px,
+                        lg: 14px,
+                        md: 20px,
+                        sm: 18px,
+                        xs: 16px));
+                  }
+                }
+              }
+
               >.cat-and-name {
                 h2 {
                   padding-right: 15px;
@@ -108,7 +136,6 @@
                       md: 8px,
                       sm: 8px,
                       xs: 7px));
-
                 }
               }
 
