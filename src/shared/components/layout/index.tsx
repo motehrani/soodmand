@@ -3,6 +3,7 @@ import { Container } from 'reactstrap'
 import { Footer } from '../footer'
 import { SoodmandSearch } from '../soodmand-search'
 import { NavBar } from '../navbar'
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react'
 
 export interface LayoutProps {
   children: React.ReactNode
@@ -19,6 +20,16 @@ const Layout = ({ children }: LayoutProps) => {
         <Container>{children}</Container>
       </div>
       <Footer />
+      <OverlayScrollbarsComponent
+        element="span"
+        options={{ scrollbars: { autoHide: 'scroll' } }}
+        events={{
+          scroll: () => {
+            /* ... */
+          },
+        }}
+        defer
+      />
     </div>
   )
 }
