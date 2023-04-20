@@ -12,14 +12,6 @@ export interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="page-layout">
-      <div className="sood-nav">
-        <SoodmandSearch />
-        <NavBar />
-      </div>
-      <div className="page-content">
-        <Container>{children}</Container>
-      </div>
-      <Footer />
       <OverlayScrollbarsComponent
         element="span"
         options={{ scrollbars: { autoHide: 'scroll' } }}
@@ -29,7 +21,16 @@ const Layout = ({ children }: LayoutProps) => {
           },
         }}
         defer
-      />
+      >
+        <div className="sood-nav">
+          <SoodmandSearch />
+          <NavBar />
+        </div>
+        <div className="page-content">
+          <Container>{children}</Container>
+        </div>
+        <Footer />
+      </OverlayScrollbarsComponent>
     </div>
   )
 }
