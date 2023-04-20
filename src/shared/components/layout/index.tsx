@@ -15,8 +15,10 @@ const Layout = ({ children }: LayoutProps) => {
       <OverlayScrollbarsComponent
         element="span"
         options={{ scrollbars: { autoHide: 'scroll' } }}
+        style={{ maxHeight: '100vh' }}
         events={{
-          scroll: () => {
+          scroll: evt => {
+            console.log(evt.elements().viewport.scrollTop)
             /* ... */
           },
         }}
