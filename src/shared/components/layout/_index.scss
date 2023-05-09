@@ -21,4 +21,19 @@
     right: 0;
     z-index: 10;
   }
+
+  .os-scrollbar-rtl.os-scrollbar-vertical {
+    left: auto;
+    right: 0;
+    top: 96px !important;
+    bottom: 159px !important;
+
+    s>.os-scrollbar-track {
+      background-color: var(--opposite-t2);
+
+      >.os-scrollbar-handle {
+        background-color: var(--main);
+      }
+    }
+  }
 }
